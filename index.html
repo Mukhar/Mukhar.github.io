@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fi/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="fi/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="fi/favicon-16x16.png" />
+    <link rel="manifest" href="fi/site.webmanifest" />
+    <link rel="mask-icon" href="fi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <title>Entrepreneurship Portal IIT Delhi</title>
+    <meta name="description" content="Entrepreneurship Portal IIT Delhi">
+    <meta name="keywords"
+        content="EDC,IIT ,edciitd,IITD, entrepreneur,entrepreneurshipnpandemicedciitd,Entrepreneurship">
+    <meta name="author" content="edc-iit-delhi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IMPORT FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lato&display=swap" >
+    <!-- ICONS !-->
+    <link rel="stylesheet" href="./css/style-particle.css">
+
+    <link rel="stylesheet" href="./css/style-colour-head.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!-- FLEX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/style-slide.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="./css/style-team.css">
+    <link rel="stylesheet" href="./css/style-contact.css">
+
+
+    <style>
+        .__edc_ {
+            display: none;
+        }
+    </style>
+
+
+    <title>S.Inc</title>
+    <script type="text/javascript">
+        $().ready(function () {
+
+            // Nav toggle slide in small device
+            var nav_op = 0;
+            $("#toggle").click(function () {
+                $('ul.nav').slideToggle("slow");
+                nav_op = 1;
+            });
+
+            $("ul.nav li>a").click(function () {
+                if (nav_op != 0) {
+                    $('ul.nav').slideToggle("slow");
+                    nav_op = 0;
+
+                }
+
+            });
+
+            $(window).resize(function () {
+                if (!window.matchMedia("(max-width: 980px)").matches) {
+                    $('ul.nav').fadeIn();
+                    nav_op = 0;
+                } else {
+                    $('ul.nav').css("display", "none");
+                    nav_op = 0;
+                }
+            });
+
+
+            if (window.location.hash) {
+                var i = $("section.background").index($(window.location.hash));
+                if (i >= 0)
+                    goTo(i);
+            }
+
+
+            $("ul.nav li.scroll-to a").click(function () {
+                goTo($("ul.nav li.scroll-to a").index(this));
+                //alert("Hi"+$("ul.nav li.scroll-to a").index(this));
+            });
+
+            $("__topnav a.scroll-to").click(function () {
+                goTo($("__topnav a.scroll-to").index(this));
+                //alert("Hi"+$("ul.nav li.scroll-to a").index(this));
+            });
+
+            $(".__xyz_trig").click(function () {
+                var cur = $(".active_").attr('id').slice(0, -4);
+                var next = $(this).attr('id').slice(0, -4);
+
+                $(".active_").removeClass('active_');
+                $("." + cur).fadeOut(function () {
+                    $("." + next).fadeIn();
+                });
+                $("#" + next + "trig").addClass('active_')
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!--
+    <section id="loaderr">
+        <div class="load-dots">
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+        </div>
+        </div>
+    </section>
+-->
+    <header>
+        <div id="toggle"><a><i class="material-icons" style="font-size:1.5em;color:#fff">menu</i></a></div>
+        <div class="profile">
+            <a href="#" title="eDC | IIT Delhi"><img src="logo/edc-logo.png" class="header-logo" alt="logo1"></a>
+            <a href="#" title="SInC | IIT Delhi"> <img src="logo/logo.png" class="header-logo" alt="logo2"></a>
+
+        </div>
+        <ul class="nav">
+            <li class="scroll-to"><a href="#home">Home</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="https://www.facebook.com/edciitdelhi/events/">Events</a></li>
+            <li class="scroll-to"><a href="#initiative">Initiatives</a></li>
+            <li class="scroll-to"><a href="#resources">Resources</a></li>
+            <li class="scroll-to"><a href="#showcase">IITD Unicorns</a></li>
+            <li class="scroll-to"><a href="#team">Team</a></li>
+            <li><a target="_blank" href="./sponsors.html">Sponsors</a></li>
+            <!-- <li><a href="https://ecelliitd.wordpress.com/">Blog</a></li> -->
+            <li class="scroll-to"><a href="#contact">Contact Us</a></li>
+
+        </ul>
+    </header>
+    <!-- change in style.css while adding new sections!! -->
+    <div class="container">
+        <section class="background" id="home">
+
+            <div class="content-wrapper main_head">
+                <div class="hi">
+                    <p class="content-title main_head total-title">Entrepreneurship Portal IIT Delhi</p>
+                    <div class="text">
+                        <p>WE</p>
+                        <p>
+                            <span class="word wisteria">IDEATE.</span>
+                            <span class="word belize">INNOVATE.</span>
+                            <span class="word pomegranate">INCUBATE.</span>
+                            <span class="word green">NURTURE.</span>
+                            <span class="word midnight">GUIDE.</span>
+                            <span class="word pomogranate">CREATE.</span>
+                        </p>
+                    </div>
+                    <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMBGwvomC31cCdCUm387qeC5u5sWO3z6c6DsD7RBRcZ8pGNA/viewform?vc=0&c=0&w=1"
+                        target="_blank"><button id="join" class="btn red"><span>JOIN US</span></button>
+                    </a> -->
+                </div>
+
+                <div id="particles-js" class="hidden_in_mobile">
+                </div>
+        </section>
+        <section class="background" id="initiative">
+            <div class="content-wrapper">
+                <p class="initiative-heading content-title">INITIATIVES</p>
+                <div class="initiative-wrapper">
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">BECon</div>
+                            <img loading="lazy" src="resources_initiative/White-copy-0.png " alt="becon" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">incubation</div>
+                            <img loading="lazy" src="resources_initiative/White-copy-1.png " alt="incubation" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Mentorship</div>
+                            <img loading="lazy" src="resources_initiative/White-copy-2.png " alt="mentorship" />
+                        </a>
+                    </div>
+
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Meraki</div>
+                            <img loading="lazy" src="resources_initiative/White-copy-3.png " alt="meraki" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Startup 101</div>
+                            <img loading="lazy" src="resources_initiative/White-copy-4.png " alt="startup101" />
+                        </a>
+                    </div>
+                    <div class=" initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Startup 201</div>
+                            <img src="resources_initiative/image.png " alt="startup 201" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Investor meetup</div>
+                            <img src="resources_initiative/White-copy-5.png " alt="invertor meet" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">StartupX</div>
+                            <img src="resources_initiative/white.png " alt="startupX" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" background" id="resources">
+            <div class="content-wrapper">
+                <p class="initiative-heading content-title">Resources</p>
+                <div class="initiative-wrapper">
+                    <div class="initiative-block">
+                        <a class="img" href="https://essentialsatedciitd.wordpress.com/">
+                            <div class="img__overlay img__overlay--red">Entrepreneur<br>ship Essentials
+                            </div><img src="resources-icons/1.png " alt="essentials" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="https://lifestoriesedciitd.wordpress.com/">
+                            <div class="img__overlay img__overlay--red">Founder Diaries
+                            </div><img src="resources-icons/2.png " alt="founder diary" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="./Schemes/index.html">
+                            <div class="img__overlay img__overlay--red">Support Schemes
+                            </div><img src="resources-icons/3.png " alt="support schemes" />
+                        </a>
+                    </div>
+
+                    <div class="initiative-block">
+                        <a class="img" href="./startup/index.html">
+                            <div class="img__overlay img__overlay--red">Current Startups @ IITD
+                            </div><img src="resources-icons/4.png " alt="startups" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="https://entrepreneurshipnpandemicedciitd.wordpress.com/">
+                            <div class="img__overlay img__overlay--red">Covid19 & Entrepreneurship
+                            </div><img src="resources-icons/5.png " alt="covid19" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="https://bookreadsedciitd.wordpress.com/">
+                            <div class="img__overlay img__overlay--red">Books</div>
+                            <img src="resources-icons/6.png " alt="Books" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="https://ecelliitd.wordpress.com/best-online-courses/">
+                            <div class="img__overlay img__overlay--red">Courses </div>
+                            <img src="resources-icons/7.png " alt="courses" />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="https://tipsproductivityatedciitd.wordpress.com/">
+                            <div class="img__overlay img__overlay--red">Productivity Tips
+                            </div><img src="resources-icons/8.png " alt="productivity" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="background" id="resources">
+            <div class="content-wrapper">
+                <p class="content-title">Resources</p>
+                <p class="content-subtitle">Essential Entrepreneur Resources</p>
+                <div class="container">
+                    <ul class="cards hide_s">
+                        <li class="cards__item">
+                            <div class="card">
+                                <div class="card__image card__image--fence"></div>
+                                <div class="card__content">
+                                    <div class="card__title">INFORMATIVE BOOKS</div>
+                                    <p class="card__text">SOME OF THE BEST BOOKS TO READ</p>
+                                    <a href="https://ecelliitd.wordpress.com/top-books/">
+                                        <button class="btn btn--block card__btn">MORE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards__item">
+                            <div class="card">
+                                <div class="card__image card__image--river"></div>
+                                <div class="card__content">
+                                    <div class="card__title">ONLINE COURSES</div>
+                                    <p class="card__text">SOME OF THE BEST ONLINE COURSES</p>
+                                    <a href="https://ecelliitd.wordpress.com/best-online-courses/">
+                                        <button class="btn btn--block card__btn">MORE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards__item">
+                            <div class="card">
+                                <div class="card__image card__image--record"></div>
+                                <div class="card__content">
+                                    <div class="card__title">SUPPORT</div>
+                                    <p class="card__text">We have got all what you need to be an entrepreneur</p>
+                                    <button class="btn btn--block card__btn">Coming Soon </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="cards hide_l">
+                        <a href="https://ecelliitd.wordpress.com/top-books/">
+                            <li class="fleximg cards__item">
+                                <img src="img/books.jpg">
+                                <p class="text">BOOKS</p>
+                            </li>
+                        </a>
+                        <a href=".https://ecelliitd.wordpress.com/best-online-courses/">
+                            <li class="fleximg cards__item">
+                                <img src="img/books.jpg">
+                                <p class="text">Courses</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="cards hide_l">
+                        <a href="#">
+                            <li class="fleximg cards__item">
+                                <img src="img/courses.png">
+                                <i class="fa fa-book fa-2x"></i>
+                                <p class="text">SUPPORT</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="fleximg cards__item">
+                                <img src="img/courses.png">
+                                <i class="fa fa-book fa-2x"></i>
+                                <p class="text">MENTORS</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+        </section> -->
+        <section class="background" id="showcase">
+            <div class="content-wrapper">
+                <p class="content-title"> IITD Unicorns</p>
+                <p class="content-subtitle"></p>
+                <div class="myItems slideshow-container" id="aeiou">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/sun.jpg"
+                                    alt="sun systems">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Sun Microsystems</h1>
+                                <p>Vinod Khosla, an alumni of IIT Delhi founded Sun Microsystems, Inc. (Sun for short)
+                                    as an American company that sold computers, computer components, software, and
+                                    information technology services and created the Java programming language, the
+                                    Solaris operating system, ZFS, the Network File System (NFS), and SPARC. Sun
+                                    contributed significantly to the evolution of several key computing technologies,
+                                    among them Unix, RISC processors, thin client computing, and virtualized computing.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase"
+                                    src="files/showcase/flipkart.jpg"></div>
+                            <div class="right-showcase">
+                                <h1>Flipkart</h1>
+                                <p>Flipkart, the big billion e-commerce startup, was founded in 2007 by Sachin Bansal
+                                    and Binny Bansal, both alumni of the Indian Institute of Technology Delhi. They left
+                                    their jobs at Amazon and brought sales under the roof of technology. They started
+                                    this venture when e-commerce was more of a risk than opportunity but with a clear
+                                    vision of offering the best consumer experience to internet users, they witnessed
+                                    incredible growth in the last 12 years.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/zomato.jpg"
+                                    alt="zomato">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Zomato</h1>
+                                <p>Our very own alumni Deepinder Goyal, a maths and computing graduate, started an
+                                    internet directory for restaurant menus out of his apartment in 2008 which now has
+                                    become one of the biggest restaurant aggregator and food delivery startup in 24
+                                    countries and more than 10,000 cities.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/cohesity.jpg"
+                                    alt="cohesity"></div>
+                            <div class="right-showcase">
+                                <h1>Cohesity</h1>
+                                <p>Founded in June 2013 by Mohit Aron, who previously co-founded storage company Nutanix
+                                    Cohesity is a privately held information technology company headquartered in San
+                                    Jose, California. They develop software that allows IT professionals to
+                                    backup, manage and gain insights from their data, across multiple systems.
+                                    .The company's main product, DataPlatform, is hyper-converged software that allows
+                                    businesses to consolidate a
+                                    variety of workloads, including backups, archives, test and development, along with
+                                    analytics data, onto a single cloud-native platform.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase"
+                                    src="files/showcase/policybazaar.jpg" alt="policybazaar">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>PolicyBazaar</h1>
+                                <p>Policybazaar is India's largest online financial services platform. An Indian
+                                    insurance aggregator and a global financial technology startup, the company was
+                                    founded in June 2008 by Yashish Dahiya, Alok Bansal, and Avaneesh Nirjar. Since
+                                    2008, the company has been a key force in establishing an informative online
+                                    financial services platform in India.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase"
+                                    src="files/showcase/delhivery.jpg" alt="delhivery">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Delhivery</h1>
+                                <p>Since its inception in 2011, Delhivery has become India’s leading supply chain
+                                    service provider, encompassing over 18,000 PIN Codes in India. Started with five
+                                    co-founders, including our very own alumni Mr. Kapil Bharati, and a handful of
+                                    delivery boys, the startup has now over 2500 plus employees who service a 600-client
+                                    base across express and fulfillment logistics</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/quikr.jpg"
+                                    alt="quikr">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Quikr</h1>
+                                <p>Pranay Chulet is an Indian entrepreneur who has managed to build a billion-dollar
+                                    business for the local market through Quikr, India’s leading cross-category
+                                    classifieds platform. His vision of putting second-hand first is gaining popularity,
+                                    considering the environmental benefits associated with reusing products.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/udaan.jpg"
+                                    alt="udaan">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Udaan</h1>
+                                <p>Udaan is a B2B e-commerce platform, designed to solve core trade problems for small,
+                                    medium and large businesses across India. It is the largest national distribution
+                                    platform of its kind, enabling retailers and businesses to source merchandise from
+                                    manufacturers, brands, white labels, importers etc. on a single platform. Sujeet
+                                    Kumar is an IITD Alumni who brings to users the power of technology to grow their
+                                    business via Udaan</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/pine.jpg"
+                                    alt="pine">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Pine Labs</h1>
+                                <p>Pine Labs is an Indian merchant platform company that provides financing and
+                                    last-mile retail transaction technology. Co-Founded in 1998 by Rajul Garg and Tarun
+                                    Upaday, it provides a merchant platform and makes software for point of sale (PoS)
+                                    machines. The company has more than 70,000 retailers across India, including major
+                                    retail outlets such as Mark's and Spencer's Retail, Pantaloons, Shoppers Stop and
+                                    Westside.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase">
+                                <img loading="lazy" class="left-showcase" src="files/showcase/snapdeal.jpg"
+                                    alt="snapdeal">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Snapdeal</h1>
+                                <p>Rohit Bansal is an Indian entrepreneur, co-founder and CEO of e-commerce platform
+                                    Snapdeal which is an Indian e-commerce company that started in 2010. With millions
+                                    of users and more than 300,000 sellers, Snapdeal is the shopping destination for
+                                    Internet users across the country, delivering to 6000+ cities and towns in India</p>
+                            </div>
+                        </div>
+                    </a>
+                   
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img loading="lazy" class="left-showcase"
+                                    src="files/showcase/rivigo.jpg" alt="rivigo">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Rivigo</h1>
+                                <p>Founded in August 2014, Rivigo is one of the fastest-growing startups in India which
+                                    provides express surface logistics all over the country. It was the vision of our
+                                    alumni Gazal Kalra that today, Rivigo has reached 4000+ cities, 5000+ high-tech
+                                    truck fleet with around 30k pin codes covered</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img loading="lazy" class="left-showcase"
+                                    src="files/showcase/shopclues.jpg" alt="shopclues">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>ShopClues</h1>
+                                <p>ShopClues is an online marketplace established in July 2011 in Silicon Valley by
+                                    Sanjay Sethi along with other co-founders. The company has over 600,000 merchants
+                                    and 28 million products on its platform, serving over 32,000 pincodes across the
+                                    country</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img loading="lazy" class="left-showcase"
+                                    src="files/showcase/appdyn.jpg" alt="appdyn">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>AppDynamics</h1>
+                                <p>A Computer Science graduate from IIT Delhi, Jyoti Bansal founded AppDynamics in April
+                                    2008 which grew onto becoming a unicorn. This application performance management
+                                    (APM) and IT operations analytics (ITOA) company focuses on managing the performance
+                                    and availability of applications across cloud computing environments as well as
+                                    inside the data center</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img loading="lazy" class="left-showcase"
+                                    src="files/showcase/indiabulls.jpg" alt="indiabulls">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Indiabulls</h1>
+                                <p>Our own Mechanical Engineer, Sameer Gehlaut went on to become a renowned Indian
+                                    businessman and founder & chairman of the Indiabulls Group, an Indian conglomerate
+                                    headquartered in Gurgaon, India. Its primary businesses are housing finance,
+                                    consumer finance, and wealth management</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="#" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img loading="lazy" class="left-showcase"
+                                    src="files/showcase/nimble.jpg" alt="nimble">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Nimble Storage</h1>
+                                <p>HPE Nimble Storage is a predictive flash storage technology developed by Nimble
+                                    Storage and founded by our alumni Umesh Maheshwari along with other co-founders.
+                                    Nimble is a subsidiary of Hewlett Packard Enterprise</p>
+                            </div>
+                        </div>
+
+                    </a>
+
+                </div>
+                <div class="dot-container" id="aeioud">
+                    <!-- <span class="dot active" onclick="currentSlide(1)"></span><span class="dot"
+                        onclick="currentSlide(2)"></span>-->
+
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                <script type="text/javascript">
+                    //SLIDESHOW....................
+                    var slideIndex = 1;
+                    var ssize;
+
+                    function numPerSlide() {
+                        ssize = 1;
+                    }
+
+                    numPerSlide();
+
+
+                    function createNode(element) {
+                        return document.createElement(element);
+                    }
+
+                    function append(parent, el) {
+                        return parent.appendChild(el);
+                    }
+                    const ul = document.getElementById("aeiou");
+                    const uld = document.getElementById("aeioud");
+                    const url = "https://iic.devclub.in/api/showcase";
+                    /*fetch(url)
+                        .then(resp => resp.json())
+                        .then(function (data) {
+                            let authors = data.data;
+                            var ret = authors.map(function (author) {
+                                let a = createNode("a"),
+                                    div1 = createNode("div"),
+                                    div2 = createNode("div"),
+                                    img = createNode("img"),
+                                    h = createNode("h1"),
+                                    p = createNode("p"),
+                                    divn = createNode("div");
+                                img.classList.add("left-showcase");
+                                div1.classList.add("thumbnail-showcase");
+                                div2.classList.add("right-showcase");
+                                divn.classList.add("divn");
+                                img.src = "tech-startup.jpg";
+                                a.classList.add("myItem");
+                                a.classList.add("mySlides");
+                                h.innerHTML = `${author.metaData.title}`;
+                                p.innerHTML = `${author.body}`;
+                                append(div2, h);
+                                append(div2, p);
+                                append(div1, img);
+                                append(divn, div1);
+                                append(divn, div2);
+                                append(a, divn);
+                                append(ul, a);
+                                // card_header.classList.add("myItem-header");
+                                // card_header.style.backgroundImage = "url(" + `${author.metaData.img}` + ")";
+                                // card_title.classList.add("myItem-title");
+                                // card_title_h.innerHTML = `${author.metaData.title}`;
+                                // append(card_title, card_title_h);
+                                // append(card_header, card_title);
+                                // append(card, card_header);
+
+
+
+                                // card_summary.classList.add("myItem-summary");
+                                // e_date.classList.add("e-date");
+                                // e_date.innerHTML = "<i class='material-icons'>today</i> &nbsp" + `${author.metaData.eventDate}`;
+                                // append(card_summary, e_date);
+
+                                // e_time.classList.add("e-time");
+                                // e_time.innerHTML = "<i class='material-icons'>access_time</i> &nbsp" + `${author.metaData.eventDate}`;
+                                // append(card_summary, e_time);
+
+                                // e_venue.classList.add("e-venue");
+                                // e_venue.innerHTML = "<i class='material-icons'>location_on</i> &nbsp" + `${author.metaData.venue}`;
+                                // append(card_summary, e_venue);
+
+                                // e_org.classList.add("e-org");
+                                // e_org.innerHTML = "<i class='material-icons'>person</i> &nbsp" + `${author.metaData.organiser}`;
+                                // append(card_summary, e_org);
+
+                                // e_type.classList.add("e-type");
+                                // e_type.innerHTML = `${author.metaData.eventDate}`;
+                                // //append(card_summary,e_type);
+
+                                // e_more_info.classList.add("e-more-info");
+                                // e_more_info.innerHTML = "<i class='material-icons' style='text-shadow: none;'>arrow_forward</i>";
+                                // append(card_summary, e_more_info);
+
+                                // append(card, card_summary);
+
+
+                                // append(ul, card);
+                            });
+
+                            makeDots();
+                            showSlides(1);
+                            console.log(data);
+                            return ret;
+
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                        */
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+
+                    function makeDots() {
+                        var tot = slides.length;
+                        for (var j = 1; j <= tot; j++) {
+                            let dot = createNode("span");
+                            dot.classList.add("dot");
+                            dot.setAttribute("onClick", "currentSlide(" + j + ")");
+                            append(uld, dot);
+
+                        }
+                    }
+                    makeDots();
+                    showSlides(1);
+
+
+
+                    $(window).resize(function () {
+                        numPerSlide();
+
+                        //ssize updt, now rem prev dots
+                        var dots_c = document.getElementsByClassName("dot-container")[0];
+                        var d_child = dots_c.lastElementChild;
+                        while (d_child) {
+                            dots_c.removeChild(d_child);
+                            d_child = dots_c.lastElementChild;
+                        }
+                        makeDots();
+                        currentSlide(1);
+
+                    });
+
+
+
+
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+
+
+
+
+                    function showSlides(n) {
+                        var i;
+
+
+
+                        if (ssize * (n - 1) + 1 > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = Math.ceil(slides.length / ssize) }
+
+
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+
+                        for (i = 0; i < ssize; i++) {
+                            if ((slideIndex - 1) * ssize + i < slides.length) {
+                                slides[(slideIndex - 1) * ssize + i].style.display = "block";
+                            }
+                        }
+
+                        dots[slideIndex - 1].className += " active";
+                    }
+
+
+                </script>
+            </div>
+        </section>
+        <section class="background" id="team">
+            <div class="content-wrapper">
+                <p class="content-title"><a href="./team/index.html">Team</a></p>
+                <p class="content-subtitle">Meet the people who make awesome EDC awesome</p>
+                <div class="demo">
+                    <div class="container1">
+                        <div class="row">
+                            <div id="testimonial-slider" class="owl-carousel">
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="pic">
+                                            <img loading="lazy" src="./team/pm.jpg" alt="PM">
+                                        </div>
+                                        <h3 class="name">Prashant Mishra</h3>
+                                        <span class="title">Faculty Head</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+
+                                    <div class="testimonial-content">
+                                        <div class="pic">
+                                            <img loading="lazy" src="./team/anmol-u.jpg" alt="anmol">
+                                        </div>
+                                        <h3 class="name">Anmol Ratan</h3>
+                                        <span class="title">Overall Coordinator SINC</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+
+                                    <div class="testimonial-content">
+                                        <div class="pic">
+                                            <img loading="lazy" src="./team/divyansh-u.jpg" alt="div">
+                                        </div>
+                                        <h3 class="name">Divyansh Rana</h3>
+                                        <span class="title">Overall Coordinator EDC</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="pic">
+                                            <img loading="lazy" src="./team/arunima-u.jpg" alt="aru">
+                                        </div>
+                                        <h3 class="name">Arunima</h3>
+                                        <span class="title">Overall Coordinator EDC</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="pic">
+                                            <img loading="lazy" src="./team/vishal-u.jpg" alt="vishal">
+                                        </div>
+                                        <h3 class="name">Vishal Gupta</h3>
+                                        <span class="title">Overall Coordinator EDC</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background" id="contact">
+            <div class="content-wrapper">
+                <div class="_row1">
+                    <div class="_col1">
+                        <div class="_title">Events</div>
+                        <div class="imag"><a href="https://www.facebook.com/edciitdelhi/events/"><img loading="lazy"
+                                    src="./img/events.png" alt="img"> </a>
+                        </div>
+                    </div>
+                    <div class="_col2">
+                        <div class="_title">Team</div>
+                        <div class="imag"><a href="./team/"><img loading="lazy" src="./img/team-l.png" alt="img"></a>
+                        </div>
+                    </div>
+                    <div class="_col3">
+                        <div class="_title">Blog</div>
+                        <div class="imag"><a href="https://ecelliitd.wordpress.com"><img loading="lazy"
+                                    src="./img/blog.png" alt="img">
+                            </a></div>
+                    </div>
+                </div>
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMBGwvomC31cCdCUm387qeC5u5sWO3z6c6DsD7RBRcZ8pGNA/viewform?vc=0&c=0&w=1"
+                        target="_blank"><button id="join" class="btn red"><span>JOIN US</span></button>
+                    </a>
+                <div class="footer_merged">
+                    <footer class="footer-distributed">
+
+                        <div class="footer-left">
+                            <a href="#" class="link-1">.</a>
+                            <!-- <a href="./sponsors.html">Sponsors</a>  
+                                                   -->
+                            <div>
+                                <!-- <i class="fa fa-map-marker"></i> -->
+                                <p>IIT Delhi Hauz Khas New Delhi</p>
+                            </div>
+                        </div>
+                        <div class="footer-center">
+
+                            <div>
+                                <i class="fa fa-envelope"></i>
+                                <p><a href="mailto:edciitd.team@gmail.com">edciitd.team@gmail.com</a></p>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-right">
+
+                            <!-- <p class="footer-company-about">
+                            <span>About US</span>
+                            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu
+                            auctor lacus vehicula sit amet.
+                        </p> -->
+
+                            <div class="footer-icons">
+
+                                <a href="https://www.facebook.com/edciitdelhi/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/edciitdelhi"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/edc-iit-delhi"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/edc_iitd/"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+
+                        </div>
+
+                    </footer>
+
+                    <div class="foot-down">
+                        <div class="_row3">
+                            <div class="_footer">
+                                <div class="__dev">Developed by <a href="./dev_team">Tech Team</a></div>
+                                <div class="__pow">Powered by <a href="https://devclub.in/#/">Dev Club</a></div> <br>
+                                <div class="__copy">E-Cell &copy 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+    <!-- <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+    <!-- <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script> -->
+    <script src="./script/script.js"></script>
+    <script src="particles.js-master/demo/js/particles.js"></script>
+    <script src="particles.js-master/demo/js/app.js"></script>
+    <script src="./script/script-colour-head.js"></script>
+    <script src="./script/script-team.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158710579-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158710579-2');
+</script>
+
+</body>
+<script>
+    // Wait for window load
+    /*
+    document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'complete') {
+            document.getElementById('interactive');
+            $('#loaderr').fadeOut();
+        }
+    }
+    */
+</script>
+
+</html>
