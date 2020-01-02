@@ -17,39 +17,77 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/531e1de8e8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- partial:index.partial.html -->
     <h1 align="center">Events</h1>
     <div class="container">
       <div class="cards" id="authors">
-        <!--
-        <a class="card" href="#">
-          <span
-            class="card-header"
-            style="background-image: url(http://placeimg.com/400/400/tech);"
-          >
-            <span class="card-title">
-              <h3>Title</h3>
-            </span>
-          </span>
-          <span class="card-summary">
-            <p>Date</p>
-            <p>Organiser</p>
-            <p>Venue</p>
-          </span>
-          
-        </a>-->
+        <!-- <div class="card">
+          <input type="checkbox" id="card1" class="more" aria-hidden="true" />
+          <div class="content">
+            <div class="front" style="background-image: url('80')">
+              <div class="inner">
+                <h2>Cozy apartment</h2>
+                <!--
+                   <div class="rating"><i class="fas fa-calendar-day"></i>day</div>
+                <div class="rating"><i class="fas fa-clock"></i>time</div>
+                <div class="rating"><i class="fas fa-user"></i>organiser</div>
+
+                <div class="rating">
+                  <i class="fas fa-map-marker-alt"></i>time
+                </div> --
+                <div class="e-date">
+                  <i class="material-icons">today</i> &nbsp;event Date 1
+                </div>
+                <div class="e-time">
+                  <i class="material-icons">access_time</i> &nbsp;event Date 1
+                </div>
+                <div class="e-venue">
+                  <i class="material-icons">location_on</i> &nbsp;venue
+                </div>
+                <div class="e-org">
+                  <i class="material-icons">person</i> &nbsp;organiser
+                </div>
+
+                <label for="card1" class="button" aria-hidden="true">
+                  Details
+                </label>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptates earum nostrum ipsam ullam, reiciendis nam
+                  </p>
+                </div>
+
+                <label for="card1" class="button return" aria-hidden="true">
+                  <i class="material-icons">arrow_back</i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
-    <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
       function createNode(element) {
@@ -60,110 +98,95 @@
       }
       const ul = document.getElementById("authors");
       const url = "https://iic.devclub.in/api/events";
+      var count = 1;
       fetch(url)
         .then(resp => resp.json())
         .then(function(data) {
           let authors = data.data;
           return authors.map(function(author) {
-            let card = createNode("a"),
-              card_header = createNode("div"),
-              card_title = createNode("div"),
-              card_title_h = createNode("h3"),
-              card_summary = createNode("div"),
-              e_date = createNode("div"),
-              e_time = createNode("div"),
-              e_venue = createNode("div"),
-              e_org = createNode("div"),
-              e_type = createNode("div"),
-              e_more_info = createNode("div");
+            let div_card = createNode("div"),
+              input = createNode("input"),
+              divcontent = createNode("div"),
+              divfront = createNode("div"),
+              divinner1 = createNode("div"),
+              divdate = createNode("div"),
+              divtime = createNode("div"),
+              divvenue = createNode("div"),
+              divorg = createNode("div"),
+              label1 = createNode("label"),
+              label2 = createNode("label"),
+              divback = createNode("div"),
+              divinner2 = createNode("div"),
+              divdesc = createNode("div"),
+              p = createNode("p");
+            h2 = createNode("h2");
 
-            card.classList.add("card");
-
-            card_header.classList.add("card-header");
-            card_header.style.backgroundImage =
+            div_card.classList.add("card");
+            input.classList.add("more");
+            input.id = "card" + count;
+            input.type = "checkbox";
+            divcontent.classList.add("content");
+            divfront.classList.add("front");
+            divfront.style.backgroundImage =
               "url(" + `${author.metaData.img}` + ")";
-            card_title.classList.add("card-title");
-            card_title_h.innerHTML = `${author.metaData.title}`;
-            append(card_title, card_title_h);
-            append(card_header, card_title);
-            append(card, card_header);
-
-            card_summary.classList.add("card-summary");
-            e_date.classList.add("e-date");
-            e_date.innerHTML =
+            divinner1.classList.add("inner");
+            h2.innerHTML = `${author.metaData.title}`;
+            divdate.classList.add("e-date");
+            divdate.innerHTML =
               "<i class='material-icons'>today</i> &nbsp" +
               `${author.metaData.eventDate}`;
-            append(card_summary, e_date);
-
-            e_time.classList.add("e-time");
-            e_time.innerHTML =
+            divtime.classList.add("e-time");
+            divtime.innerHTML =
               "<i class='material-icons'>access_time</i> &nbsp" +
               `${author.metaData.eventDate}`;
-            append(card_summary, e_time);
 
-            e_venue.classList.add("e-venue");
-            e_venue.innerHTML =
+            divvenue.classList.add("e-venue");
+            divvenue.innerHTML =
               "<i class='material-icons'>location_on</i> &nbsp" +
               `${author.metaData.venue}`;
-            append(card_summary, e_venue);
-
-            e_org.classList.add("e-org");
-            e_org.innerHTML =
+            divorg.classList.add("e-org");
+            divorg.innerHTML =
               "<i class='material-icons'>person</i> &nbsp" +
               `${author.metaData.organiser}`;
-            append(card_summary, e_org);
+            var att = document.createAttribute("for");
+            //label1.sestAttribute("for", "card" + count);
+            att.value = "card" + count;
+            var att2 = document.createAttribute("for");
+            att2.value = "card" + count;
+            label1.setAttributeNode(att);
+            label2.setAttributeNode(att2);
 
-            e_type.classList.add("e-type");
-            e_type.innerHTML = `${author.metaData.eventDate}`;
-            //append(card_summary,e_type);
+            //
 
-            e_more_info.classList.add("e-more-info");
-            e_more_info.innerHTML =
-              "<i class='material-icons' style='text-shadow: none;'>arrow_forward</i>";
-            append(card_summary, e_more_info);
+            label1.classList.add("button");
+            label1.innerHTML = "Details";
+            divback.classList.add("back");
+            divinner2.classList.add("inner");
+            divdesc.classList.add("description");
+            p.innerHTML = `${author.metaData.description}`;
+            //label2.for = "card" + count;
+            //label2.sestAttribute("for", "card" + count);
 
-            append(card, card_summary);
-
-            append(ul, card);
-            /*
-
-
-
-            let a = createNode("a"),
-              h = createNode("h3"),
-              span1 = createNode("span"),
-              span2 = createNode("span"),
-              span3 = createNode("span"),
-              //span4 = createNode("span");
-              p1 = createNode("p");
-            p2 = createNode("p");
-            p3 = createNode("p");
-            a.classList.add("card");
-            span1.classList.add("card-header");
-            span2.classList.add("card-title");
-            span1.style.backgroundImage = "test.png";
-            //"url('http://placeimg.com/400/400/tech')";
-            h.innerHTML = `${author.metaData.title}`;
-            //h.innerHTML = "Freshers orientation";
-            p1.innerHTML = `${author.metaData.eventDate}`;
-            //p1.innerHTML = "29/12/2019";
-            p2.innerHTML = `${author.metaData.organiser}`;
-            //p2.innerHTML = "Student incubation club";
-            p3.innerHTML = `${author.metaData.venue}`;
-            //p3.innerHTML = "Venue: LHC114";
-            span3.classList.add("card-summary");
-            p1.classList.add("date");
-            p2.classList.add("organiser");
-            p3.classList.add("venue");
-            append(span3, p1);
-            append(span3, p2);
-            append(span3, p3);
-            append(span2, h);
-            append(span1, span2);
-            append(a, span1);
-            append(a, span3);
-            //append(a, span4);
-            append(ul, a); */
+            label2.classList.add("button");
+            label2.classList.add("return");
+            label2.innerHTML = "<i class='material-icons'>arrow_back</i>";
+            append(divdesc, p);
+            append(divinner2, divdesc);
+            append(divinner2, label2);
+            append(divback, divinner2);
+            append(divinner1, h2);
+            append(divinner1, divdate);
+            append(divinner1, divtime);
+            append(divinner1, divvenue);
+            append(divinner1, divorg);
+            append(divinner1, label1);
+            append(divfront, divinner1);
+            append(divcontent, divfront);
+            append(divcontent, divback);
+            append(div_card, input);
+            append(div_card, divcontent);
+            append(ul, div_card);
+            count = count + 1;
           });
         })
         .catch(function(error) {
