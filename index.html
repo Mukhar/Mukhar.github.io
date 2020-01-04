@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lato&display=swap" rel="stylesheet">
     <!-- ICONS !-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -20,8 +20,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style-team.css">
+
     <title>S.Inc</title>
+
+    <style>
+        #loaderr { display: block; position: absolute; left: 0; top: 0; height:100vh; width: 100vw; background: black; z-index: 9999; color: white; text-align:  center; font-size: 5em;}
+        .loader {
+          border: 16px solid #f3f3f3; /* Light grey */
+          border-top: 16px solid #3498db; /* Blue */
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+    </style>
+
+         
     <script type="text/javascript">
+
+
     $().ready(function() {
 
         // Nav toggle slide in small device
@@ -53,13 +76,20 @@
 
         if (window.location.hash) {
             var i = $("section.background").index($(window.location.hash));
+                
             if (i >= 0)
+                console.log('i is '+i);
                 goTo(i);
-        }
+        } 
 
 
         $("ul.nav li a").click(function() {
-            goTo($("ul.nav li a").index(this));
+            // console.log('going to')
+            if ($("ul.nav li a").index(this)>4){
+            goTo($("ul.nav li a").index(this)-1);
+            }
+            else{goTo($("ul.nav li a").index(this));}
+
         });
 
 
@@ -81,23 +111,29 @@
 </head>
 
 <body>
+    <section id="loaderr">
+        <div class="loader"></div>
+        Loading...
+    </section>
     <header>
         <div id="toggle"><a><i class="material-icons" style="font-size:1.5em;color:#fff">menu</i></a></div>
         <div class="profile">
-            <img src="logo.png" class="header-logo">
-            <div class="header-title">S.Inc, IIT Delhi</div>
+           <a href="" title="SInC | IIT Delhi"> <img src="logo.png" class="header-logo"></a>
+            <a title="eDC | IIT Delhi"><img src="edc-logo.png" class="header-logo"></a>
+            
         </div>
         <ul class="nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#initiative">Initiatives</a></li>
-            <li><a href="#blog">Blog</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#showcase">Startup Showcase</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#sponsor">Sponsors</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+
         </ul>
     </header>
     <!-- change in style.css while adding new sections!! -->
@@ -126,7 +162,7 @@
                 <p class="content-subtitle">Startup Initiatives to be put of here</p>
             </div>
         </section>
-        <section class="background" id="blog">
+       <!-- <section class="background" id="blog">
             <div class="content-wrapper">
                 <p class="content-title">Blog</p>
                 <p class="content-subtitle">
@@ -138,6 +174,7 @@
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </section>
+    -->
         <section class="background" id="resources">
             <div class="content-wrapper">
                 <p class="content-title">Resources</p>
@@ -443,11 +480,87 @@
         </section>
         <section class="background" id="team">
             <div class="content-wrapper">
-                <p class="content-title"><a href="./team/sample.html">OUR TEAM</a></p>
+                <p class="content-title"><a href="./team/sample.html">Team</a></p>
                 <p class="content-subtitle">Meet the people who make awesome stuffs</p>
-                <!-- ------------------------------- -->
-                
+                 <div class="container">
+                <div class="team-member">
+                    <figure>
+                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/lauren-cox.jpg" alt="">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h4>Lauren Cox</h4>
+                    <p>Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <figure>
+                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/jessie-barnett.jpg" alt="">
+                        <figcaption>
+                            <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.</p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h4>Jessie Barnett</h4>
+                    <p>UI/UX Designer</p>
+                </div><!-- /.team-member-->
+                <div class="team-member">
+                    <figure>
+                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/terry-fletcher.jpg" alt="" class="img-responsive">
+                        <figcaption class="team-member">
+                            <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.</p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h4>Terry Fletcher</h4>
+                    <p>Web Developer</p>
+                </div><!-- /.team-member-->
+                <div class="team-member">
+                    <figure>
+                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/lauren-cox.jpg" alt="">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h4>Lauren Cox</h4>
+                    <p>Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <figure>
+                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/lauren-cox.jpg" alt="">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h4>Lauren Cox</h4>
+                    <p>Creative Director</p>
+                </div>
+            </div><!-- /.container -->
             </div>
+           
 
         </section>
         <section class="background" id="sponsor">
@@ -484,5 +597,16 @@
         });
     </script>
 </body>
+
+    <script>
+        // Wait for window load
+        document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'complete') {
+         document.getElementById('interactive');
+         $('#loaderr').fadeOut();
+         }
+        }    
+    </script> 
 
 </html>
