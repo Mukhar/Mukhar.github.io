@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fi/favicon-16x16.png">
+    <link rel="manifest" href="fi/site.webmanifest">
+    <link rel="mask-icon" href="fi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <title>Entrepreneurship Portal IIT Delhi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -11,474 +18,249 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lato&display=swap" rel="stylesheet">
     <!-- ICONS !-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
     <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <!-- FLEX -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style-last.css">
     <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style-team.css">
     <link rel="stylesheet" href="./style-slide.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <link rel="stylesheet" href="startup_style.css">
+    <link rel="stylesheet" href="style-particle.css">
+    <link rel="stylesheet" href="./dist (extract.me)/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
+    <link rel="stylesheet" href="./dist-t/style-t.css">
+
+
+
+    <style>
+        .__edc_ {
+            display: none;
+        }
+    </style>
 
 
     <title>S.Inc</title>
-
-    <style>
-        #loaderr { display: block; position: absolute; vertical-align: middle;  height:100vh; width: 100vw; background: black; z-index: 9999; color: #aaa; text-align:  center; font-size: 1.5em;}
-        .lds-circle {
-          display: inline-block;
-          transform: translateZ(1px);
-        }
-        .lds-circle > div {
-          display: inline-block;
-          width: 1.5em;
-          height: 1.5em;
-          margin: 0.2em;
-          border-radius: 50%;
-          background: #aaa;
-          animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-        }
-        @keyframes lds-circle {
-          0%, 100% {
-            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
-          }
-          0% {
-            transform: rotateY(0deg);
-          }
-          50% {
-            transform: rotateY(1800deg);
-            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
-          }
-          100% {
-            transform: rotateY(3600deg);
-          }
-        }
-
-        body {
-          background: #ffffff;
-        }
-
-        .load-dots {
-          width: 0;
-          height: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          margin: auto;
-          -webkit-filter: url(#goo);
-                  filter: url(#goo);
-        }
-
-        .load-dot {
-          width: 0;
-          height: 0;
-          position: absolute;
-          left: 0;
-          top: 0;
-        }
-        .load-dot:before {
-          content: '';
-          width: 35px;
-          height: 35px;
-          border-radius: 50px;
-          background: #FBD301;
-          position: absolute;
-          left: 50%;
-          -webkit-transform: translateY(0) rotate(0deg);
-                  transform: translateY(0) rotate(0deg);
-          margin-left: -17.5px;
-          margin-top: -17.5px;
-        }
-        @-webkit-keyframes dot-move {
-          0% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-          }
-          18%, 22% {
-            -webkit-transform: translateY(-70px);
-                    transform: translateY(-70px);
-          }
-          40%, 100% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-          }
-        }
-        @keyframes dot-move {
-          0% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-          }
-          18%, 22% {
-            -webkit-transform: translateY(-70px);
-                    transform: translateY(-70px);
-          }
-          40%, 100% {
-            -webkit-transform: translateY(0);
-                    transform: translateY(0);
-          }
-        }
-        @-webkit-keyframes dot-colors {
-          0% {
-            background-color: #FBD301;
-          }
-          25% {
-            background-color: #FF3270;
-          }
-          50% {
-            background-color: #208BF1;
-          }
-          75% {
-            background-color: #AFE102;
-          }
-          100% {
-            background-color: #FBD301;
-          }
-        }
-        @keyframes dot-colors {
-          0% {
-            background-color: #FBD301;
-          }
-          25% {
-            background-color: #FF3270;
-          }
-          50% {
-            background-color: #208BF1;
-          }
-          75% {
-            background-color: #AFE102;
-          }
-          100% {
-            background-color: #FBD301;
-          }
-        }
-        .load-dot:nth-child(5):before {
-          z-index: 100;
-          width: 45.5px;
-          height: 45.5px;
-          margin-left: -22.75px;
-          margin-top: -22.75px;
-          -webkit-animation: dot-colors 4s ease infinite;
-                  animation: dot-colors 4s ease infinite;
-        }
-        @-webkit-keyframes dot-rotate-1 {
-          0% {
-            -webkit-transform: rotate(-105deg);
-                    transform: rotate(-105deg);
-          }
-          100% {
-            -webkit-transform: rotate(270deg);
-                    transform: rotate(270deg);
-          }
-        }
-        @keyframes dot-rotate-1 {
-          0% {
-            -webkit-transform: rotate(-105deg);
-                    transform: rotate(-105deg);
-          }
-          100% {
-            -webkit-transform: rotate(270deg);
-                    transform: rotate(270deg);
-          }
-        }
-        .load-dot:nth-child(1) {
-          -webkit-animation: dot-rotate-1 4s 0s linear infinite;
-                  animation: dot-rotate-1 4s 0s linear infinite;
-        }
-        .load-dot:nth-child(1):before {
-          background-color: #FF3270;
-          -webkit-animation: dot-move 4s 0s ease infinite;
-                  animation: dot-move 4s 0s ease infinite;
-        }
-        @-webkit-keyframes dot-rotate-2 {
-          0% {
-            -webkit-transform: rotate(165deg);
-                    transform: rotate(165deg);
-          }
-          100% {
-            -webkit-transform: rotate(540deg);
-                    transform: rotate(540deg);
-          }
-        }
-        @keyframes dot-rotate-2 {
-          0% {
-            -webkit-transform: rotate(165deg);
-                    transform: rotate(165deg);
-          }
-          100% {
-            -webkit-transform: rotate(540deg);
-                    transform: rotate(540deg);
-          }
-        }
-        .load-dot:nth-child(2) {
-          -webkit-animation: dot-rotate-2 4s 1s linear infinite;
-                  animation: dot-rotate-2 4s 1s linear infinite;
-        }
-        .load-dot:nth-child(2):before {
-          background-color: #208BF1;
-          -webkit-animation: dot-move 4s 1s ease infinite;
-                  animation: dot-move 4s 1s ease infinite;
-        }
-        @-webkit-keyframes dot-rotate-3 {
-          0% {
-            -webkit-transform: rotate(435deg);
-                    transform: rotate(435deg);
-          }
-          100% {
-            -webkit-transform: rotate(810deg);
-                    transform: rotate(810deg);
-          }
-        }
-        @keyframes dot-rotate-3 {
-          0% {
-            -webkit-transform: rotate(435deg);
-                    transform: rotate(435deg);
-          }
-          100% {
-            -webkit-transform: rotate(810deg);
-                    transform: rotate(810deg);
-          }
-        }
-        .load-dot:nth-child(3) {
-          -webkit-animation: dot-rotate-3 4s 2s linear infinite;
-                  animation: dot-rotate-3 4s 2s linear infinite;
-        }
-        .load-dot:nth-child(3):before {
-          background-color: #AFE102;
-          -webkit-animation: dot-move 4s 2s ease infinite;
-                  animation: dot-move 4s 2s ease infinite;
-        }
-        @-webkit-keyframes dot-rotate-4 {
-          0% {
-            -webkit-transform: rotate(705deg);
-                    transform: rotate(705deg);
-          }
-          100% {
-            -webkit-transform: rotate(1080deg);
-                    transform: rotate(1080deg);
-          }
-        }
-        @keyframes dot-rotate-4 {
-          0% {
-            -webkit-transform: rotate(705deg);
-                    transform: rotate(705deg);
-          }
-          100% {
-            -webkit-transform: rotate(1080deg);
-                    transform: rotate(1080deg);
-          }
-        }
-        .load-dot:nth-child(4) {
-          -webkit-animation: dot-rotate-4 4s 3s linear infinite;
-                  animation: dot-rotate-4 4s 3s linear infinite;
-        }
-        .load-dot:nth-child(4):before {
-          background-color: #FBD301;
-          -webkit-animation: dot-move 4s 3s ease infinite;
-                  animation: dot-move 4s 3s ease infinite;
-        }
-
-
-
-    </style>
-
-         
     <script type="text/javascript">
+        $().ready(function () {
 
-
-     $().ready(function() {
-
-        // Nav toggle slide in small device
-        var nav_op = 0;
-        $("#toggle").click(function() {
-            $('ul.nav').slideToggle("slow");
-            nav_op = 1;
-        });
-
-        $("ul.nav li>a").click(function() {
-            if (nav_op != 0) {
+            // Nav toggle slide in small device
+            var nav_op = 0;
+            $("#toggle").click(function () {
                 $('ul.nav').slideToggle("slow");
-                nav_op = 0;
+                nav_op = 1;
+            });
 
+            $("ul.nav li>a").click(function () {
+                if (nav_op != 0) {
+                    $('ul.nav').slideToggle("slow");
+                    nav_op = 0;
+
+                }
+
+            });
+
+            $(window).resize(function () {
+                if (!window.matchMedia("(max-width: 980px)").matches) {
+                    $('ul.nav').fadeIn();
+                    nav_op = 0;
+                } else {
+                    $('ul.nav').css("display", "none");
+                    nav_op = 0;
+                }
+            });
+
+
+            if (window.location.hash) {
+                var i = $("section.background").index($(window.location.hash));
+                if (i >= 0)
+                    goTo(i);
             }
 
-        });
 
-        $(window).resize(function() {
-            if (!window.matchMedia("(max-width: 980px)").matches) {
-                $('ul.nav').fadeIn();
-                nav_op = 0;
-            } else {
-                $('ul.nav').css("display", "none");
-                nav_op = 0;
-            }
-        });
+            $("ul.nav li.scroll-to a").click(function () {
+                goTo($("ul.nav li.scroll-to a").index(this));
+                //alert("Hi"+$("ul.nav li.scroll-to a").index(this));
+            });
 
+            $("__topnav a.scroll-to").click(function () {
+                goTo($("__topnav a.scroll-to").index(this));
+                //alert("Hi"+$("ul.nav li.scroll-to a").index(this));
+            });
 
-        if (window.location.hash) {
-            var i = $("section.background").index($(window.location.hash));
-                
-            if (i >= 0)
-                console.log('i is '+i);
-                goTo(i);
-        } 
+            $(".__xyz_trig").click(function () {
+                var cur = $(".active_").attr('id').slice(0, -4);
+                var next = $(this).attr('id').slice(0, -4);
 
+                $(".active_").removeClass('active_');
+                $("." + cur).fadeOut(function () {
+                    $("." + next).fadeIn();
+                });
+                $("#" + next + "trig").addClass('active_')
+            });
 
-        $("ul.nav li a.scroll-to").click(function() {
-            // console.log('going to')
+            /* Generalised
+                        $("#__sinc_trig").click(function () {
+                            $(".active_").removeClass('active_');
+                            $("#__sinc_trig").addClass('active_');
+                            $(".__edc_").fadeOut(function () {
+                                $(".__sinc_").fadeIn();
+                            });
+                        });
             
-            goTo($("ul.nav li a").index(this));
-
+                        $("#__edc_trig").click(function () {
+                            $(".active_").removeClass('active_');
+                            $("#__edc_trig").addClass('active_');
+                            $(".__sinc_").fadeOut(function () {
+                                $(".__edc_").fadeIn();
+                            })
+                        })
+            */
         });
 
-
-
-        /*
-        //SLideShow
-        let dot_container=document.createElement("div");
-        dot_container.classList.add("dot-container");
-        for (int i=0;i<document.getElementsByClassName("mySlides").length;i++){
-          let dot_container=document.createElement("span");
-          dot.classList.add("dot");
-          dot_container.appendChild(dot);
-        }
-        $('#showcase .content-wrapper').add(dot_container);
-        */
-
-    });
     </script>
 </head>
 
 <body>
-     <section id="loaderr">
-        
+
+    <section id="loaderr">
         <div class="load-dots">
-              <div class="load-dot"></div>
-              <div class="load-dot"></div>
-              <div class="load-dot"></div>
-              <div class="load-dot"></div>
-              <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
+            <div class="load-dot"></div>
         </div>
-
-
         </div>
     </section>
     <header>
         <div id="toggle"><a><i class="material-icons" style="font-size:1.5em;color:#fff">menu</i></a></div>
         <div class="profile">
-           <a title="SInC | IIT Delhi"> <img src="logo.png" class="header-logo"></a>
+            <a title="SInC | IIT Delhi"> <img src="logo.png" class="header-logo"></a>
             <a title="eDC | IIT Delhi"><img src="edc-logo.png" class="header-logo"></a>
-            
         </div>
         <ul class="nav">
-            <li><a href="#home" class="scroll-to">Home</a></li>
-            <li><a href="#about" class="scroll-to">About</a></li>
-            <li><a href="#events" class="scroll-to">Events</a></li>
-            <li><a href="#initiative" class="scroll-to">Initiatives</a></li>
-            <li><a href="#resources" class="scroll-to">Resources</a></li>
-            <li><a href="#showcase" class="scroll-to">Startup Showcase</a></li>
-            <li><a href="#team" class="scroll-to">Team</a></li>
-            <li><a href="#sponsor" class="scroll-to">Sponsors</a></li>
-            <li><a href="#contact" class="scroll-to">Contact Us</a></li>
-            <li><a href="blog/">Blog</a></li>
-
+            <li class="scroll-to"><a href="#home">Home</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="https://www.facebook.com/edciitdelhi/events/">Events</a></li>
+            <li class="scroll-to"><a href="#initiative">Initiatives</a></li>
+            <li class="scroll-to"><a href="#resources">Resources</a></li>
+            <li class="scroll-to"><a href="#showcase">Startup Showcase</a></li>
+            <li class="scroll-to"><a href="#team">Team</a></li>
+            <li class="scroll-to"><a href="#contact">Contact Us</a></li>
+            <li><a target="_blank" href="./sponsors.html">Sponsors</a></li>
+            <li><a href="https://ecelliitd.wordpress.com/">Blog</a></li>
         </ul>
     </header>
     <!-- change in style.css while adding new sections!! -->
     <div class="container">
         <section class="background" id="home">
-            <div class="content-wrapper">
-                <p class="content-title">Entrepreneurship Portal IIT Delhi</p>
-                <p class="content-subtitle">Scroll down and up to see the effect!</p>
-            </div>
-        </section>
-        <section class="background" id="about">
-            <div class="splitview skewed">
-            <div class="panel bottom">
-            <a href="SInC">
-                <div class="content">
-                <div class="description">
-                    <h1>About SInC IITD</h1>
-                    <!-- <p>This is how the image looks like before applying a duotone effect.</p> -->
-                    <p>The Student Incubation Cell, IIT Delhi is formed with an intent to promote design thinking, planful ideation and support budding Entrepreneurs at IIT DELHI who can make a mark on the world map through their vision, next-generation technology, and services by leading from the front.Our mission is to empower every student in the campus in every way possible who aim high to translate their ideas into real-world Startup and to help in a smooth transition in every phase of this journey. As they say “It’s not about ideas, it’s about making ideas happen and we are committed to pave the way with every step one takes.</p>
-                    <h4>Our Aim</h4> 
-                    <p>SInC aims to support and augment the efforts of budding entrepreneurs by providing them the necessary cash to start, connecting them to the industry experts, investors, provide them incubation spaces, easy access to resources for their product development and make them pitch ready.The motto is to create an ecosystem where healthy discussions with professors,industry veterans,investors and peers is fostered which encourages the students to pursue their ideas freely.</p>
-                    <h3>Vision</h3>
+
+            <div class="content-wrapper main_head">
+                <div class="hi">
+                    <p class="content-title main_head total-title">Entrepreneurship Portal IIT Delhi</p>
+                    <div class="text">
+                        <p>WE</p>
+                        <p>
+                            <span class="word wisteria">IDEATE.</span>
+                            <span class="word belize">INNOVATE.</span>
+                            <span class="word pomegranate">INCUBATE.</span>
+                            <span class="word green">NURTURE.</span>
+                            <span class="word midnight">GUIDE.</span>
+                            <span class="word midnight">CREATE.</span>
+                        </p>
+                    </div>
                 </div>
 
-                <img src="./logo.png" alt="SInc">
-            </div></a>
-            </div>
-
-            <div class="panel top">
-            <a href="EDC">
-            <div class="content">
-                <div class="description">
-                    <h1>About EDC IITD</h1>
-                    <p>The Entrepreneurship Development Cell (eDC, IITD) was initiated in January, 2007 with a vision to promote Entrepreneurship amongst the students of IIT Delhi and to build an exhaustive resource pool to aid potential student entrepreneurs. Since our inception, we have organized various events ranged over social entrepreneurship events on campus to PAN IIT business plan contests and we have definitely brought about a surge in entrepreneurial activities on campus</p>
-                    <h4>Our mission</h4>
-                    <p>With an aim to strive towards promoting entrepreneurship, we at eDC IIT Delhi are a group of enthusiasts working continuously to provide a platform to foster, inspire and help the young aspiring students open the door of the promising & exciting world of entrepreneurship</p>
-                    <h4>Vision</h4>
-                    <p>Entrepreneurship in India is yet to reveal its hidden potential. It will not only help India to frontier with the world leaders but also unlock the quality of brains that we are so proud of. With this idea, The Entrepreneurship Development Cell, IIT Delhi wishes to inculcate and Enrich the entrepreneurial environment in India by creating an easily accessible and exhaustive set of resources for the entrepreneurs, which including the students, the budding professionals, mentors, angel investors and the venture capitalists through various fun-filled yet educating sessions such as Startup Showcases, competitions, eTalks and so on and so forth</p>
+                <div id="particles-js">
 
                 </div>
-
-                <img src="./edc-logo.png" alt="EDC">
-            </div>
-                </a>
-                </div>
-
-                <div class="handle"></div>
-            </div>
-
-            <div class="content-wrapper">
-                <!-- <p class="content-title">About Us</p> -->
-                <!-- <p class="content-subtitle"></p> -->
-            </div>
-        </section>
-        <section class="background" id="events">
-            <div class="content-wrapper">
-                <p class="content-title"><a href="./events/">Events</a></p>
-                <p class="content-subtitle">blocks</p>
-            </div>
         </section>
         <section class="background" id="initiative">
             <div class="content-wrapper">
-                <p class="content-title">Initiatives</p>
-                <p class="content-subtitle">Startup Initiatives to be put of here</p>
+                <h1 class="initiative-heading">INITIATIVES</h1>
+                <div class="initiative-wrapper">
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">BECon</div><img
+                                src="resources_initiative/White-copy-0.png " />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">incubation</div><img
+                                src="resources_initiative/White-copy-1.png " />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Mentorship</div><img
+                                src="resources_initiative/White-copy-2.png " />
+                        </a>
+                    </div>
+
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Meraki</div><img
+                                src="resources_initiative/White-copy-3.png " />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Startup 101</div><img
+                                src="resources_initiative/White-copy-4.png " />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Startup 201</div><img
+                                src="resources_initiative/image.png " />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">Investor meetup</div><img
+                                src="resources_initiative/White-copy-5.png " />
+                        </a>
+                    </div>
+                    <div class="initiative-block">
+                        <a class="img" href="#">
+                            <div class="img__overlay img__overlay--red">StartupX</div><img
+                                src="resources_initiative/White.png " />
+                        </a>
+                    </div>
+
+
+                    <!-- <div class="initiative-block"><img class="initiative-image" src="resources_initiative/White.png" alt="">
+                        <h2 class="initiative-title-mob">BeCon</h2>
+                        <div class="ini-overlay">
+                            <img class="initiative-image-inside" src="resources_initiative/White-copy-0.png" alt="">
+                            <h2 class="initiative-title">BeCon</h2>
+                            <p class="initiative-content">TED is a global set of conferences run by the private
+                                non-profit Sapling Foundation, under the slogan "Ideas Worth Spreading".</p>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </section>
-       <!-- <section class="background" id="blog">
-            <div class="content-wrapper">
-                <p class="content-title">Blog</p>
-                <p class="content-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </section>
-    -->
         <section class="background" id="resources">
             <div class="content-wrapper">
                 <p class="content-title">Resources</p>
-                <p class="content-subtitle">We are in need of this :P</p>
+                <p class="content-subtitle">Essential Entrepreneur Resources</p>
                 <div class="container">
                     <ul class="cards hide_s">
                         <li class="cards__item">
                             <div class="card">
                                 <div class="card__image card__image--fence"></div>
                                 <div class="card__content">
-                                    <div class="card__title">Flex</div>
-                                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                                    <a href="www.facebook.com">
-                                        <button class="btn btn--block card__btn">Button</button>
+                                    <div class="card__title">INFORMATIVE BOOKS</div>
+                                    <p class="card__text">SOME OF THE BEST BOOKS TO READ</p>
+                                    <a href="./resources/index.html#books">
+                                        <button class="btn btn--block card__btn">MORE</button>
                                     </a>
                                 </div>
                             </div>
@@ -487,9 +269,11 @@
                             <div class="card">
                                 <div class="card__image card__image--river"></div>
                                 <div class="card__content">
-                                    <div class="card__title">Flex Grow</div>
-                                    <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-                                    <button class="btn btn--block card__btn">Button</button>
+                                    <div class="card__title">ONLINE COURSES</div>
+                                    <p class="card__text">SOME OF THE BEST ONLINE COURSES</p>
+                                    <a href="./resources/index.html#courses">
+                                        <button class="btn btn--block card__btn">MORE</button>
+                                    </a>
                                 </div>
                             </div>
                         </li>
@@ -497,409 +281,570 @@
                             <div class="card">
                                 <div class="card__image card__image--record"></div>
                                 <div class="card__content">
-                                    <div class="card__title">Flex Shrink</div>
-                                    <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-                                    <button class="btn btn--block card__btn">Button</button>
+                                    <div class="card__title">SUPPORT</div>
+                                    <p class="card__text">We have got all what you need to be an entrepreneur</p>
+                                    <button class="btn btn--block card__btn">Coming Soon </button>
                                 </div>
                             </div>
                         </li>
                     </ul>
                     <ul class="cards hide_l">
-                        <a href="#">
+                        <a href="./resources/index.html#books">
                             <li class="fleximg cards__item">
-                                <img src="img/flex1.jpg">
-                                <p class="text">Category 1</p>
+                                <img src="img/books.jpg">
+                                <p class="text">BOOKS</p>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="./resources/index.html#courses">
                             <li class="fleximg cards__item">
-                                <img src="img/flex2.JPG">
-                                <p class="text">Category 2</p>
+                                <img src="img/books.jpg">
+                                <p class="text">Courses</p>
                             </li>
                         </a>
                     </ul>
                     <ul class="cards hide_l">
-                    	                            <a href="#">
-
-                        <li class="fleximg cards__item">
-                                <img src="img/flex1.JPG">
+                        <a href="./resources/index.html#books">
+                            <li class="fleximg cards__item">
+                                <img src="img/courses.png">
+                                <i class="fa fa-book fa-2x"></i>
                                 <p class="text">Category 3</p>
-                            </li></a>
-                                                        <a href="#">
-
-                        <li class="fleximg cards__item">
-                                <img src="img/flex2.JPG">
-                                <p class="text">Category 4</p>
-                            
-                        </li></a>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="fleximg cards__item">
+                                <img src="img/courses.png">
+                                <i class="fa fa-book fa-2x"></i>
+                                <p class="text">BOOKS</p>
+                            </li>
+                        </a>
                     </ul>
                 </div>
         </section>
         <section class="background" id="showcase">
             <div class="content-wrapper">
                 <p class="content-title">Startup Showcase</p>
-                <p class="content-subtitle">Our startups </p>
-                <!--
-			      <div class="slideshow-container">
-
-			        <div class="mySlides">
-			          <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-			          <p class="author">- John Keats</p>
-			        </div>
-
-			        <div class="mySlides">
-			          <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-			          <p class="author">- Ernest Hemingway</p>
-			        </div>
-
-			        <div class="mySlides">
-			          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-			          <p class="author">- Thomas A. Edison</p>
-			        </div>
-
-			        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-			      </div>
-			    -->
+                <p class="content-subtitle"></p>
                 <div class="myItems slideshow-container" id="aeiou">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <a href="./showcase/index.html" class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/sun.jpeg">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Sun Microsystems</h1>
+                                <p>Vinod Khosla, an alumni of IIT Delhi founded Sun Microsystems, Inc. (Sun for short)
+                                    as an American company that sold computers, computer components, software, and
+                                    information technology services and created the Java programming language, the
+                                    Solaris operating system, ZFS, the Network File System (NFS), and SPARC. Sun
+                                    contributed significantly to the evolution of several key computing technologies,
+                                    among them Unix, RISC processors, thin client computing, and virtualized computing.
+                                    In January 2010, the company was sold to Oracle.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase"
+                                    src="files/showcase/flipkart.jpeg"></div>
+                            <div class="right-showcase">
+                                <h1>Flipkart</h1>
+                                <p>Flipkart, the big billion e-commerce startup, was founded in 2007 by Sachin Bansal
+                                    and Binny Bansal, both alumni of the Indian Institute of Technology Delhi. They left
+                                    their jobs at Amazon and brought sales under the roof of technology. They started
+                                    this venture when e-commerce was more of a risk than opportunity but with a clear
+                                    vision of offering the best consumer experience to internet users, they witnessed
+                                    incredible growth in the last 12 years.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase" src="files/showcase/zomato.jpeg">
+                            </div>
+                            <div class="right-showcase">
+                                <h1>Zomato</h1>
+                                <p>Our very own alumni Deepinder Goyal, a maths and computing graduate, started an
+                                    internet directory for restaurant menus out of his apartment in 2008 which now has
+                                    become one of the biggest restaurant aggregator and food delivery startup in 24
+                                    countries and more than 10,000 cities.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="myItem mySlides" style="display: block;">
+                        <div class="divn">
+                            <div class="thumbnail-showcase"><img class="left-showcase"
+                                    src="files/showcase/cohesity.jpeg"></div>
+                            <div class="right-showcase">
+                                <h1>Cohesity</h1>
+                                <p>Cohesity is a privately held information technology company headquartered in San
+                                    Jose, California. The company develops software that allows IT professionals to
+                                    backup, manage and gain insights from their data, across multiple systems or cloud
+                                    providers. Cohesity was founded in June 2013 by Mohit Aron, who previously
+                                    co-founded storage company Nutanix. While still in stealth mode, it closed a Series
+                                    A funding round of $15M. Cohesity was founded in June 2013 by Mohit Aron, who
+                                    previously co-founded storage company Nutanix. Cohesity develops software used to
+                                    consolidate and simplify data management and includes analytics capabilities. The
+                                    company's software also solves the problem of mass data fragmentation, as data
+                                    proliferates across multiple systems or cloud providers. The company's main product,
+                                    DataPlatform, is hyper-converged software that allows businesses to consolidate a
+                                    variety of workloads, including backups, archives, test and development, along with
+                                    analytics data, onto a single cloud-native platform. It works with physical servers
+                                    as well as virtual machines.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="dot-container" id="aeioud">
+                    <!-- <span class="dot active" onclick="currentSlide(1)"></span><span class="dot"
+                        onclick="currentSlide(2)"></span>-->
+
                 </div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
                 <script type="text/javascript">
-                //SLIDESHOW....................
-                var slideIndex = 1;
-                var ssize;
+                    //SLIDESHOW....................
+                    var slideIndex = 1;
+                    var ssize;
 
-                function numPerSlide() {
-                    if (!window.matchMedia("(max-width: 980px)").matches)
-                        ssize = 3;
-                    else if (!window.matchMedia("(max-width: 700px)").matches)
-                        ssize = 2;
-                    else
+                    function numPerSlide() {
                         ssize = 1;
-                }
-
-                numPerSlide();
-
-
-                function createNode(element) {
-                    return document.createElement(element);
-                }
-
-                function append(parent, el) {
-                    return parent.appendChild(el);
-                }
-                const ul = document.getElementById("aeiou");
-                const uld = document.getElementById("aeioud");
-                const url = "https://iic.devclub.in/api/events";
-                fetch(url)
-                    .then(resp => resp.json())
-                    .then(function(data) {
-                        let authors = data.data;
-                        var ret = authors.map(function(author) {
-                            let card = createNode("a"),
-                                card_header = createNode("div"),
-                                card_title = createNode("div"),
-                                card_title_h = createNode("h3"),
-                                card_summary = createNode("div"),
-                                e_date = createNode("div"),
-                                e_time = createNode("div"),
-                                e_venue = createNode("div"),
-                                e_org = createNode("div"),
-                                e_type = createNode("div"),
-                                e_more_info = createNode("div");
-
-                            card.classList.add("myItem");
-                            card.classList.add("mySlides");
-
-                            card_header.classList.add("myItem-header");
-                            card_header.style.backgroundImage = "url(" + `${author.metaData.img}` + ")";
-                            card_title.classList.add("myItem-title");
-                            card_title_h.innerHTML = `${author.metaData.title}`;
-                            append(card_title, card_title_h);
-                            append(card_header, card_title);
-                            append(card, card_header);
-
-
-
-                            card_summary.classList.add("myItem-summary");
-                            e_date.classList.add("e-date");
-                            e_date.innerHTML = "<i class='material-icons'>today</i> &nbsp" + `${author.metaData.eventDate}`;
-                            append(card_summary, e_date);
-
-                            e_time.classList.add("e-time");
-                            e_time.innerHTML = "<i class='material-icons'>access_time</i> &nbsp" + `${author.metaData.eventDate}`;
-                            append(card_summary, e_time);
-
-                            e_venue.classList.add("e-venue");
-                            e_venue.innerHTML = "<i class='material-icons'>location_on</i> &nbsp" + `${author.metaData.venue}`;
-                            append(card_summary, e_venue);
-
-                            e_org.classList.add("e-org");
-                            e_org.innerHTML = "<i class='material-icons'>person</i> &nbsp" + `${author.metaData.organiser}`;
-                            append(card_summary, e_org);
-
-                            e_type.classList.add("e-type");
-                            e_type.innerHTML = `${author.metaData.eventDate}`;
-                            //append(card_summary,e_type);
-
-                            e_more_info.classList.add("e-more-info");
-                            e_more_info.innerHTML = "<i class='material-icons' style='text-shadow: none;'>arrow_forward</i>";
-                            append(card_summary, e_more_info);
-
-                            append(card, card_summary);
-
-
-                            append(ul, card);
-                        });
-
-                        makeDots();
-                        showSlides(1);
-                        return ret;
-
-                    })
-                    .catch(function(error) {
-                        console.log(error);
-                    });
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-
-                function makeDots() {
-                    var tot = Math.ceil(slides.length / ssize);
-                    for (var j = 1; j <= tot; j++) {
-                        let dot = createNode("span");
-                        dot.classList.add("dot");
-                        dot.setAttribute("onClick", "currentSlide(" + j + ")");
-                        append(uld, dot);
-
                     }
-                }
 
-
-
-                $(window).resize(function() {
                     numPerSlide();
 
-                    //ssize updt, now rem prev dots
-                    var dots_c = document.getElementsByClassName("dot-container")[0];
-                    var d_child = dots_c.lastElementChild;
-                    while (d_child) {
-                        dots_c.removeChild(d_child);
-                        d_child = dots_c.lastElementChild;
-                    }
-                    makeDots();
-                    currentSlide(1);
 
-                });
-
-
-
-
-
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-
-
-
-
-
-                function showSlides(n) {
-                    var i;
-
-
-
-                    if (ssize * (n - 1) + 1 > slides.length) { slideIndex = 1 }
-                    if (n < 1) { slideIndex = Math.ceil(slides.length / ssize) }
-
-
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
+                    function createNode(element) {
+                        return document.createElement(element);
                     }
 
-                    for (i = 0; i < ssize; i++) {
-                        if ((slideIndex - 1) * ssize + i < slides.length) {
-                            slides[(slideIndex - 1) * ssize + i].style.display = "block";
+                    function append(parent, el) {
+                        return parent.appendChild(el);
+                    }
+                    const ul = document.getElementById("aeiou");
+                    const uld = document.getElementById("aeioud");
+                    const url = "https://iic.devclub.in/api/showcase";
+                    /*fetch(url)
+                        .then(resp => resp.json())
+                        .then(function (data) {
+                            let authors = data.data;
+                            var ret = authors.map(function (author) {
+                                let a = createNode("a"),
+                                    div1 = createNode("div"),
+                                    div2 = createNode("div"),
+                                    img = createNode("img"),
+                                    h = createNode("h1"),
+                                    p = createNode("p"),
+                                    divn = createNode("div");
+                                img.classList.add("left-showcase");
+                                div1.classList.add("thumbnail-showcase");
+                                div2.classList.add("right-showcase");
+                                divn.classList.add("divn");
+                                img.src = "tech-startup.jpg";
+                                a.classList.add("myItem");
+                                a.classList.add("mySlides");
+                                h.innerHTML = `${author.metaData.title}`;
+                                p.innerHTML = `${author.body}`;
+                                append(div2, h);
+                                append(div2, p);
+                                append(div1, img);
+                                append(divn, div1);
+                                append(divn, div2);
+                                append(a, divn);
+                                append(ul, a);
+                                // card_header.classList.add("myItem-header");
+                                // card_header.style.backgroundImage = "url(" + `${author.metaData.img}` + ")";
+                                // card_title.classList.add("myItem-title");
+                                // card_title_h.innerHTML = `${author.metaData.title}`;
+                                // append(card_title, card_title_h);
+                                // append(card_header, card_title);
+                                // append(card, card_header);
+
+
+
+                                // card_summary.classList.add("myItem-summary");
+                                // e_date.classList.add("e-date");
+                                // e_date.innerHTML = "<i class='material-icons'>today</i> &nbsp" + `${author.metaData.eventDate}`;
+                                // append(card_summary, e_date);
+
+                                // e_time.classList.add("e-time");
+                                // e_time.innerHTML = "<i class='material-icons'>access_time</i> &nbsp" + `${author.metaData.eventDate}`;
+                                // append(card_summary, e_time);
+
+                                // e_venue.classList.add("e-venue");
+                                // e_venue.innerHTML = "<i class='material-icons'>location_on</i> &nbsp" + `${author.metaData.venue}`;
+                                // append(card_summary, e_venue);
+
+                                // e_org.classList.add("e-org");
+                                // e_org.innerHTML = "<i class='material-icons'>person</i> &nbsp" + `${author.metaData.organiser}`;
+                                // append(card_summary, e_org);
+
+                                // e_type.classList.add("e-type");
+                                // e_type.innerHTML = `${author.metaData.eventDate}`;
+                                // //append(card_summary,e_type);
+
+                                // e_more_info.classList.add("e-more-info");
+                                // e_more_info.innerHTML = "<i class='material-icons' style='text-shadow: none;'>arrow_forward</i>";
+                                // append(card_summary, e_more_info);
+
+                                // append(card, card_summary);
+
+
+                                // append(ul, card);
+                            });
+
+                            makeDots();
+                            showSlides(1);
+                            console.log(data);
+                            return ret;
+
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                        */
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+
+                    function makeDots() {
+                        var tot = slides.length;
+                        for (var j = 1; j <= tot; j++) {
+                            let dot = createNode("span");
+                            dot.classList.add("dot");
+                            dot.setAttribute("onClick", "currentSlide(" + j + ")");
+                            append(uld, dot);
+
                         }
                     }
+                    makeDots();
+                    showSlides(1);
 
-                    dots[slideIndex - 1].className += " active";
-                }
 
-                /*
-                //SLIDESHOW....................
-                var slideIndex = 1;
-                showSlides(slideIndex);
 
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
+                    $(window).resize(function () {
+                        numPerSlide();
 
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
+                        //ssize updt, now rem prev dots
+                        var dots_c = document.getElementsByClassName("dot-container")[0];
+                        var d_child = dots_c.lastElementChild;
+                        while (d_child) {
+                            dots_c.removeChild(d_child);
+                            d_child = dots_c.lastElementChild;
+                        }
+                        makeDots();
+                        currentSlide(1);
 
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1} 
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none"; 
+                    });
+
+
+
+
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
                     }
-                    for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
                     }
-                  slides[slideIndex-1].style.display = "block"; 
-                  dots[slideIndex-1].className += " active";
-                }
-                */
+
+
+
+
+
+                    function showSlides(n) {
+                        var i;
+
+
+
+                        if (ssize * (n - 1) + 1 > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = Math.ceil(slides.length / ssize) }
+
+
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+
+                        for (i = 0; i < ssize; i++) {
+                            if ((slideIndex - 1) * ssize + i < slides.length) {
+                                slides[(slideIndex - 1) * ssize + i].style.display = "block";
+                            }
+                        }
+
+                        dots[slideIndex - 1].className += " active";
+                    }
+
+
                 </script>
             </div>
         </section>
         <section class="background" id="team">
             <div class="content-wrapper">
-                <p class="content-title"><a href="./team/sample.html">Team</a></p>
-                <p class="content-subtitle">Meet the people who make awesome stuffs</p>
-                 <div class="container">
-                <div class="team-member">
-                    <figure>
-                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/lauren-cox.jpg" alt="">
-                        <figcaption>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
-                            <ul>
-                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h4>Lauren Cox</h4>
-                    <p>Creative Director</p>
-                </div>
-                <div class="team-member">
-                    <figure>
-                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/jessie-barnett.jpg" alt="">
-                        <figcaption>
-                            <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.quod esse numquam explicabo eligendi.</p>
-                            <ul>
-                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h4>Jessie Barnett</h4>
-                    <p>UI/UX Designer</p>
-                </div><!-- /.team-member-->
-                <div class="team-member">
-                    <figure>
-                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/jessie-barnett.jpg" alt="">
-                        <figcaption>
-                            <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.</p>
-                            <ul>
-                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h4>Jessie Barnett</h4>
-                    <p>UI/UX Designer</p>
-                </div><!-- /.team-member-->
-                <div class="team-member">
-                    <figure>
-                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/lauren-cox.jpg" alt="">
-                        <figcaption>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
-                            <ul>
-                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h4>Lauren Cox</h4>
-                    <p>Creative Director</p>
-                </div>
-                <div class="team-member">
-                    <figure>
-                        <img src="http://www.mauritiusdsilva.com/themes/hallooou/assets/images/lauren-cox.jpg" alt="">
-                        <figcaption>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
-                            <ul>
-                                <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h4>Lauren Cox</h4>
-                    <p>Creative Director</p>
-                </div>
-            </div><!-- /.container -->
-            </div>
-           
+                <p class="content-title"><a href="./team/index.html">Team</a></p>
+                <p class="content-subtitle">Meet the people who make awesome EDC awesome</p>
+                <div class="demo">
+                    <div class="container1">
+                        <div class="row">
+                            <div id="testimonial-slider" class="owl-carousel">
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="pic">
+                                            <img src="./team/pm.jpg" alt="">
+                                        </div>
+                                        <h3 class="name">Prashant Mishra</h3>
+                                        <span class="title">Faculty Head</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
 
-        </section>
-        <section class="background" id="sponsor">
-            <div class="content-wrapper">
-                <p class="content-title">Sponsors</p>
-                <p class="content-subtitle">Become a Sponsor now <br> to fund </p>
+                                    <div class="testimonial-content">
+                                        <div>
+                                            <img class="pic" src="./team/anmol-u.jpeg" alt="">
+                                        </div>
+                                        <h3 class="name">Anmol Ratan</h3>
+                                        <span class="title">Overall Coordinator SINC</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+
+                                    <div class="testimonial-content">
+                                        <div>
+                                            <img class="pic" src="./team/divyansh-u.jpeg" alt="">
+                                        </div>
+                                        <h3 class="name">Divyansh Rana</h3>
+                                        <span class="title">Overall Coordinator EDC</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div>
+                                            <img class="pic" src="./team/arunima-u.jpeg" alt="">
+                                        </div>
+                                        <h3 class="name">Arunima</h3>
+                                        <span class="title">Overall Coordinator EDC</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div>
+                                            <img class="pic" src="./team/vishal-u.jpeg" alt="">
+                                        </div>
+                                        <h3 class="name">Vishal Gupta</h3>
+                                        <span class="title">Overall Coordinator EDC</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div>
+                                            <img class="pic" src="./team/lauren-cox.jpg" alt="">
+                                        </div>
+                                        <h3 class="name">Vikas Verma</h3>
+                                        <span class="title">Overall Coordinator SINC</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
         <section class="background" id="contact">
             <div class="content-wrapper">
-                <p class="content-title">Contact Us</p>
-                <p class="content-subtitle">
-                    Mail: sinc[at]iitd[dot]ac[dot]in <br>
-                    Phone: 987654321 <br>
-                    Facebook | Twitter | LinkedIn | Instagram
-                </p>
-            </div>
+                <div class="_row1">
+                    <div class="_col1">
+                        <div class="_title">Events</div>
+                        <div class="imag"><img src="./img/events.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="_col2">
+                        <div class="_title">Team</div>
+                        <div class="imag"><a href="./team/"><img src="./img/team.jpg" alt="img"></a>
+                        </div>
+                    </div>
+                    <div class="_col3">
+                        <div class="_title">Blog</div>
+                        <div class="imag"><a href="https://ecelliitd.wordpress.com"><img src="./img/blog.png" alt="img">
+                            </a></div>
+                    </div>
+                </div>
+                <footer class="footer-distributed">
+
+                    <div class="footer-left">
+                        <p class="footer-links">
+                            <a href="#" class="link-1">Home</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Sponsors</a>
+                            <a href="#">About</a>
+                            <a href="#">Team</a>
+                            <a href="#">Contact</a>
+                        </p>
+                    </div>
+
+                    <div class="footer-center">
+
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>IIT Delhi</span> Hauz Khas New Delhi</p>
+                        </div>
+
+                        <!-- <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+91 </p>
+                        </div> -->
+
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:support@company.com">support@sinc.iitd.ac.in</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-right">
+
+                        <!-- <p class="footer-company-about">
+                            <span>About US</span>
+                            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu
+                            auctor lacus vehicula sit amet.
+                        </p> -->
+
+                        <div class="footer-icons">
+
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </footer>
+                <!-- <div class="_row2">
+                    <div class="col1_">
+                        <div class="active_ __xyz_trig" id="__sinc_trig">Sinc</div>
+                        <div class="__xyz_trig" id="__edc_trig">EDC</div>
+
+                    </div>
+                    <div class="col2_">
+
+                        <div class="col21_">
+                            <div class="row211_">Contact</div>
+
+                            <div class="__sinc_">
+                                <i class="fa fa-phone fa_"></i>
+                                <span>+91 XXXXXXXXXX</span>
+                            </div>
+                            <div class="__sinc_"><i class="fa fa-envelope fa_"></i>
+                                <span><a href="mailto:support@sinc.iitd.ac.in">support@sinc.iitd.ac.in</a></span>
+                            </div>
+                            <div class="__sinc_"><i class="fa fa-map-marker fa_"></i>
+                                <span>IIT Delhi, Hauz Khas New Delhi</span>
+                            </div>
+
+                            <div class="__edc_">
+                                <i class="fa fa-phone fa_"></i>
+                                <span>+91 EDC</span>
+                            </div>
+                            <div class="__edc_"><i class="fa fa-envelope fa_"></i>
+                                <span><a href="mailto:support@sinc.iitd.ac.in">support@edc.iitd.ac.in</a></span>
+                            </div>
+                            <div class="__edc_"><i class="fa fa-map-marker fa_"></i>
+                                <span>IIT Delhi, Hauz Khas New Delhi</span>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col22_">
+
+                            <div class="row221_">@</div>
+
+
+
+                            <div class="row222_ footer-icons __sinc_">
+                                <a href="https://m.facebook.com/edciitdelhi/"><i class="fa fa-facebook fa_"></i></a>
+                                <a href="https://instagram.com/edc_iitd?igshid=2s7a9c1sa5xi"><i
+                                        class="fa fa-instagram fa_"></i></a>
+                                <a
+                                    href="https://www.linkedin.com/company/entrepreneurship-development-cell-edc-iit-delhi"><i
+                                        class="fa fa-linkedin fa_"></i></a>
+                                <a href="https://www.youtube.com/channel/UCpCxOtRhLy5442eZCoIZNYA"><i
+                                        class="fa fa-youtube fa_"></i></a>
+                            </div>
+
+                            <div class="row222_ footer-icons __edc_">
+                                <a href="https://m.facebook.com/edciitdelhi/"><i class="fa fa-facebook fa_"></i></a>
+                                <a href="https://instagram.com/edc_iitd?igshid=2s7a9c1sa5xi"><i
+                                        class="fa fa-instagram fa_"></i></a>
+                                <a
+                                    href="https://www.linkedin.com/company/entrepreneurship-development-cell-edc-iit-delhi"><i
+                                        class="fa fa-linkedin fa_"></i></a>
+                                <a href="https://www.youtube.com/channel/UCpCxOtRhLy5442eZCoIZNYA"><i
+                                        class="fa fa-youtube fa_"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="col23_">
+                            <div class="row231_">About</div>
+
+
+                            <div class="row232_ __sinc_">ABOUT SINC</div>
+
+                            <div class="row232_ __edc_">
+                                EDC fhdtys</div>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div> -->
+                <div class="foot-down">
+                    <div class="_row3">
+                        <div class="_footer">
+                            <div class="__dev">Developed by <a href="dev_team">Tech Team</a></div>
+                            <div class="__pow">Powered by <a href="https://devclub.in/#/">Dev Club</a></div> <br>
+                            <div class="__copy">E-Cell &copy 2020</div>
+                        </div>
+                    </div>
+                </div>
+
+
         </section>
     </div>
-    <!-- partial -->
-    
-    <!-- partial  ABOUT-->
-    <script type="text/javascript">
-    fetch("https://iic.devclub.in/api/about")
-        .then(resp => resp.json())
-        .then(function(data) {
-            $("#about .content-wrapper .content-subtitle").text(data.data.about);
-        })
-        .catch(function(error) {
-            console.log(error);
-        });
-    </script>
-    <script  src="./script-slide.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
     <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
     <script src="./script.js"></script>
-
+    <script src="particles.js-master/demo/js/particles.js"></script>
+    <script src="particles.js-master/demo/js/app.js"></script>
+    <script src="./dist (extract.me)/script.js"></script>
+    <script src="./dist-t/script-t.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
 </body>
-
-    <script>
-        // Wait for window load
-        document.onreadystatechange = function () {
+<script>
+    // Wait for window load
+    document.onreadystatechange = function () {
         var state = document.readyState
         if (state == 'complete') {
-         document.getElementById('interactive');
-         $('#loaderr').fadeOut();
-         }
-        }    
-    </script> 
+            document.getElementById('interactive');
+            $('#loaderr').fadeOut();
+        }
+    }
+</script>
 
 </html>

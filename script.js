@@ -9,21 +9,24 @@ var totalSlideNumber = $(".background").length;
 
 function goTo(slide){
   var iter=slide-currentSlideNumber;
-$("ul.nav li:nth-child("+currentSlideNumber+1+") > a").removeClass("yellow");
+  //var xy=currentSlideNumber;
+$("ul.nav li.scroll-to:eq("+currentSlideNumber+") > a").removeClass("yellow");
   
   if (iter>0){
     for (var i = 0; i < iter; i++) {
         currentSlideNumber++;
         nextItem();
     }
-    $("ul.nav li:nth-child("+currentSlideNumber+1+") > a").addClass("yellow");
+    //xy=currentSlideNumber;
+    $("ul.nav li.scroll-to:eq("+currentSlideNumber+") > a").addClass("yellow");
   }
   else if(iter <0){
     for (var i = 0; i < -iter; i++) {
         currentSlideNumber--;
         previousItem();
     }
-    $("ul.nav li:nth-child("+currentSlideNumber+1+") > a").addClass("yellow");
+    //xy=currentSlideNumber;
+    $("ul.nav li.scroll-to:eq("+currentSlideNumber+") > a").addClass("yellow");
 
   }
   
@@ -123,10 +126,10 @@ function nextItem() {
 
   //console.log('next called')
   $('title').text($('section.background .content-wrapper .content-title:eq('+currentSlideNumber+')').text()+' | Entrepreneurship IITD');
-  var xx=currentSlideNumber+1;
-  $("ul.nav li:nth-child("+xx+") > a").addClass("yellow");
-  xx=xx-1
-  $("ul.nav li:nth-child("+xx+") > a").removeClass("yellow");
+  var xx=currentSlideNumber;
+  $("ul.nav li.scroll-to:eq("+xx+") > a").addClass("yellow");
+  xx-=1
+  $("ul.nav li.scroll-to:eq("+xx+") > a").removeClass("yellow");
 
 }
 
@@ -135,10 +138,10 @@ function previousItem() {
   $currentSlide.removeClass("down-scroll").addClass("up-scroll");
     //console.log('previous called')
   $('title').text($('section.background .content-wrapper .content-title:eq('+currentSlideNumber+')').text()+' | Entrepreneurship IITD');
-  var xx=currentSlideNumber+1;
-  $("ul.nav li:nth-child("+xx+") > a").addClass("yellow");
-  xx=xx+1
-  $("ul.nav li:nth-child("+xx+") > a").removeClass("yellow");
+  var xx=currentSlideNumber;
+  $("ul.nav li.scroll-to:eq("+xx+") > a").addClass("yellow");
+  xx+=1
+  $("ul.nav li.scroll-to:eq("+xx+") > a").removeClass("yellow");
 
 }
 //======================for menu bar===============================================
