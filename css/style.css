@@ -128,7 +128,8 @@ section:nth-of-type(8) {
   backface-visibility: hidden;
   transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
-.main_head{
+
+.main_head {
   justify-content: center;
 }
 
@@ -144,13 +145,19 @@ section:nth-of-type(8) {
   .total-title {
     font-size: 3em;
   }
-  @media (max-width: 500px) {
-    .content-title {
-      font-size: 3.5em;
-    }
+}
+
+@media (max-width: 500px) {
+  .content-title {
+    font-size: 3.5em;
   }
 }
 
+@media(max-width:400px) {
+  .content-title {
+    font-size: 2.5em;
+  }
+}
 
 .content-title a {
   color: white;
