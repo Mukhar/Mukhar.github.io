@@ -747,7 +747,7 @@ video {
   display: inline-block;
   position: relative;
   width: 20vw;
-  margin: 0em 1em 2em 1em;
+  margin: 0em 1em 0em 1em;
 }
 
 .initiative-title {
@@ -821,7 +821,7 @@ video {
 
 @media (max-width: 700px) {
   .initiative-block {
-    width: 29vw;
+    width: 33vw;
     margin: .2em 1em .2em 1em;
   }
   .initiative-title-mob {
@@ -883,7 +883,12 @@ video {
   color: #fafafa;
   font-size: 24px;
 }
-
+@media (max-width:400px){
+  .img__overlay{
+    font-size: 11px;
+    opacity: 1;
+  }
+}
 .img__overlay--red {
   background: linear-gradient(65deg, rgba(217, 30, 24, 0.4), rgba(102, 51, 153, 0.4) 60%);
   background-color: rgba(217, 30, 24, 0.4);
