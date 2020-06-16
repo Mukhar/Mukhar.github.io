@@ -852,7 +852,7 @@ video {
   -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
   /* border: 4px solid #c0c0c0; */
-  margin: 20px;
+  margin: 15px;
 }
 
 .img__overlay:hover {
