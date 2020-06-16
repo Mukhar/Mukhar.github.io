@@ -224,8 +224,8 @@ header .profile {
 header .profile .header-logo {
   height: 3em;
   width: 3em;
-  border-radius: 50%;
-  margin-right: 0.5em;
+  /* border-radius: 50%; */
+  /* margin-right: 0.5em; */
   margin-left: 0.2em;
 }
 
