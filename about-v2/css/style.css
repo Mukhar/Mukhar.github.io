@@ -43,7 +43,7 @@
 	margin: 0px 300px;
 }
 
-.right{margin-left: 50%;}
+.right{margin-left: 35%;}
 .log-head {
 	font-weight: 500;
 	color: white;
@@ -95,6 +95,7 @@
 	line-height: 48px;
 	color: #2f2f2f;
 	text-align: center;
+	font-weight: 900;
 }
 
 .subtitle {
@@ -152,6 +153,7 @@
 	font-size: 15px;
 	color: #2f2f2f;
 	line-height: 33px;
+	text-align: center;
 }
 .info-image{
 	width:25vw;
@@ -207,11 +209,11 @@
 .left{
 	margin: 10px 10px 0px 0px ;
 	background-color: #ffd2b6;
-	border-radius:0px 50% 50% 0px;
+	border-radius:0px 5px 5px 0px;
 	border-color: #7f7777;
 	border-width: 5px;
-	min-height: 200vh;
-	width: 50%;
+	min-height: 167vh;
+	width: 35%;
 	padding-right: 50px;
 	padding-left: 10px;
 	float: left;
@@ -219,10 +221,13 @@
 .director{
 	width: 15vw;
 	align-items: center;
-	margin: 2rem 0px 2.5rem 4.5rem;
+	/* margin: 2rem 0px 2.5rem 4.5rem; */
+	margin:0 auto;
+	display: block;
 	border-radius: 50%;
 	box-shadow: 0px 5px 3px #5f5454;
 }
 .left .subhead{
-	margin: 0px 4.5rem;
+	/* margin: 0px 4.5rem; */
+text-align: center;
 }
