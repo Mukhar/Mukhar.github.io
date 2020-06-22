@@ -122,15 +122,15 @@ h1 {
 .rancho:before {
   background-image: url(./images/rancho.png);
 }.acadmaze:before {
-  background-image: url(./images/acadmaze.png);
+  background-image: url(./images/acadmaze.jpg);
 }.matisoft:before {
   background-image: url(./images/matisoft.png);
 }.cyran:before {
-  background-image: url(./images/cyran.png);
+  background-image: url(./images/cyran.jpg);
 }.tinker:before {
   background-image: url(./images/tinker.png);
 }.geliose:before {
-  background-image: url(./images/geliose.png);
+  background-image: url(./images/geliose.jpg);
 }.bht:before {
   background-image: url(./images/rancho.png);
 }.medicfibres:before {
@@ -173,7 +173,7 @@ h1 {
   background-image: url(./images/movtrack.jpg);
 }.stellargene:before {
   background-image: url(./images/stellargene.png);
-}.sicuremi {
+}.sicuremi:before {
   background-image: url(./images/sicuremi.jpg);
 }
 .rancho:before {
