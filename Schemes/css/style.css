@@ -215,7 +215,9 @@
 	margin-top: 25px;
 	background: #ffefe9;
 	padding: 10px;
-	border-radius: 10px;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
 }
 
 .head a {
@@ -239,3 +241,27 @@ ol li {
 	color: #fe701a;
 	font-size: 23px;
 }
+.btn {
+	position: relative;
+	font-size: 20px;
+	display: block;
+	margin: 30px auto;
+	padding: 10px;
+	overflow: hidden;
+	border-width: 0;
+	outline: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	background-color: #2ecc71;
+	
+	transition: background-color .3s;
+  }
+  .btn:hover, .btn:focus {
+	background-color: #27ae60;
+  }
+  .btn span {
+	display: block;
+	padding: 12px 24px;
+	color: #ffffff;
+
+  }
