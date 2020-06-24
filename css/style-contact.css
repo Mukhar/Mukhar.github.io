@@ -226,7 +226,7 @@ img {
 @media (max-width:500px){
   img {
     height: auto;
-    max-width: 89%;
+    /* max-width: 89%; */
     
   }
 }
