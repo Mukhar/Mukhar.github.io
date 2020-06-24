@@ -329,21 +329,21 @@ img.left-showcase {
   
   }
 .right-showcase {
- 
- 
-  margin-right: 2vw;
-  
- 
-}}
+  margin-right: 2vw;  
+}
+}
 .right-showcase h1 {
   padding-top: 15px;
   font-size: 2.5em;
   color: #272727;
 }
+@media (max-width:400px){
+  .right-showcase h1{
+    font-size: 1.5em;
+    padding-top: 15px;
+  }
+}
 .right-showcase h1 {margin:0px !important;}
-
-
-
 .right-showcase p {
   text-align: justify;
   padding-top: 10px;
@@ -366,7 +366,7 @@ left: 0.5vw;
 
   }
   .right-showcase{
-    padding: 2em;
+    padding: 1.3em;
     margin-top: -7vh;
   }
 }
