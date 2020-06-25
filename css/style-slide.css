@@ -346,7 +346,7 @@ img.left-showcase {
   font-size: 2.5em;
   color: #272727;
 }
-@media (max-width:400px){
+@media (max-width:600px){
   .right-showcase h1{
     font-size: 1.5em;
     padding-top: 15px;
