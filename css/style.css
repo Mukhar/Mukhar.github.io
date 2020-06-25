@@ -266,9 +266,13 @@ ul.nav {
 ul.nav>li {
   float: left;
   cursor: pointer;
-  background: #131313b8
-}
 
+}
+@media (max-width:600px){
+  ul.nav>li{
+    background: #131313b8;
+  }
+}
 .yellow {
   color: #ffe000 !important;
 }
