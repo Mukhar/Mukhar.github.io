@@ -266,6 +266,7 @@ ul.nav {
 ul.nav>li {
   float: left;
   cursor: pointer;
+  background: #131313b8
 }
 
 .yellow {
@@ -821,7 +822,7 @@ video {
 
 @media (max-width: 700px) {
   .initiative-block {
-    width: 36vw;
+    width: 33vw;
     margin: .2em 1em .2em 1em;
   }
   .initiative-title-mob {
