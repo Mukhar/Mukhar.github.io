@@ -651,6 +651,11 @@ img {
   /* 2vw width for margin (see below) & 87 only available*/
 }
 
+@media(max-width:400px){
+  .myItem{
+    width:71vw;
+  }
+}
 .myItem span {
   display: block;
 }
