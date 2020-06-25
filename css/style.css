@@ -44,7 +44,7 @@ html, body {
 }
 
 .background:first-child {
-  background-image: url(./../img/0.jfif);
+  background-image: url(./../img/0.jpg);
   -webkit-transform: translateY(-15vh);
   transform: translateY(-15vh);
 }
@@ -71,12 +71,12 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
-  background-image: url(./../img/white.jpg);
+  background-image: url(./../img/contact_us.jpg);
 }
-
+/* 
 section:nth-of-type(7) {
   background-image: url(./../img/team.jpg);
-}
+} */
 
 /* Set stacking context of slides */
 
