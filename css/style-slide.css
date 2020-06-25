@@ -310,6 +310,15 @@ body {
   box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
+@media (max-width:600px){
+  .thumbnail-showcase{
+  float: left;
+  position: relative;
+  left: 0vw;
+  top: 2vh;
+  height: 45vw;
+  width: 60vw;}
+}
 img.left-showcase {
   object-fit: cover;
   position: absolute;
@@ -345,7 +354,7 @@ img.left-showcase {
 }
 .right-showcase h1 {margin:0px !important;}
 .right-showcase p {
-  text-align: justify;
+  text-align: left;
   padding-top: 10px;
   font-size: 1em;
   line-height: 110%;
@@ -361,12 +370,13 @@ img.left-showcase {
   .thumbnail-showcase {
 float: none;
 justify-content: center;
-top:-2.5vh;
-left: 0.5vw;
+margin: 0 auto;
+/* top:-2.5vh; */
+/* left: 0.5vw; */
 
   }
   .right-showcase{
     padding: 1.3em;
-    margin-top: -7vh;
+    margin-top: 1vh;
   }
 }
