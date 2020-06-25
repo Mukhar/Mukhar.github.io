@@ -896,6 +896,8 @@ video {
   #resources .img__overlay{
     font-size: 9px;
     opacity: 1;
+    font-weight: 900;
+
   }
   .img__overlay{opacity: 1;
   font-size: 12px;}
