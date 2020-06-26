@@ -338,7 +338,7 @@ img.left-showcase {
   transform: translate(-50%, -50%);
 }
 
-@media(min-width:768px) {
+@media(min-width:811px) {
   .divn {
     display: grid;
     grid-template-columns: auto auto;
@@ -373,7 +373,7 @@ img.left-showcase {
   color: #4b4b4b;
 }
 
-@media(max-width:768px) {
+@media(max-width:811px) {
   .right-showcase p {
     font-size: 0.9em;
   }
@@ -390,12 +390,14 @@ img.left-showcase {
   }
 }
 
-@media (max-width:768px) and (min-width:600px) {
+@media (max-width:811px) and (min-width:600px) {
   .right-showcase p {
     font-size: 1.2em;
+    line-height: 125%;
   }
   .right-showcase h1 {
     padding-top: 35px;
+    font-size: 3em;
   }
   .thumbnail-showcase {
     height: 31vw;
