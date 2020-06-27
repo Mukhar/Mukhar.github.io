@@ -44,6 +44,7 @@ body {
   transform: translateY(-50%);
   text-align: justify;
   font-family: Roboto;
+  font-display: swap;
   font-size: 1rem;
   line-height: 16px;
 }
