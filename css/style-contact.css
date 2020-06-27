@@ -14,7 +14,7 @@
   display: inline-block;
 }
 
-@media(max-width:600px) {
+@media(max-width:811px) {
   ._row1 {
     height: auto;
   }
@@ -23,6 +23,13 @@
     width: 38vw;
     float: none;
   }
+  
+._row1>._col1, ._row1>._col2, ._row1>._col3 {
+  box-shadow: none;
+  background-color: transparent;
+  
+}
+  
 }
 
 .imag {

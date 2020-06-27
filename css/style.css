@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 html, body {
   overflow: hidden;
   min-height: 100%;
@@ -988,4 +990,3 @@ video {
 	color: #ffffff;
 
   } */
-  @import url(https://fonts.googleapis.com/css?family=Montserrat);
