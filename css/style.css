@@ -213,7 +213,7 @@ section:nth-of-type(8) {
 }
 
 header {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat';
   /* font-display: swap; */
   position: fixed;
   display: block;
@@ -221,6 +221,8 @@ header {
   top: 0;
   background-color: #00000061;
   z-index: 100;
+  font-size: 13px;
+  font-weight: 400 !important;
 }
 
 header .profile {
@@ -293,11 +295,11 @@ ul.nav li a {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.4em;
   padding: 3px 8px;
   cursor: pointer;
   color: #fff;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 ul.nav li a:hover {
