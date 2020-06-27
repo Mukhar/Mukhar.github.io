@@ -16,7 +16,9 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
-
+@media (max-width:500px){
+.hidden_in_mobile{display: none;}
+}
 .background {
   background-size: cover;
   background-repeat: no-repeat;
