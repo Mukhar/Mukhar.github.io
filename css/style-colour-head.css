@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
 .text {
   font-family: "Open Sans", sans-serif;
+  font-display: swap;
   font-weight: 600;
   font-size: 4em;
   
@@ -86,3 +86,4 @@
 .midnight {
   color: #FFEB3B;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
