@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 html, body {
   overflow: hidden;
   min-height: 100%;
@@ -9,16 +8,20 @@ html, body {
   font-weight: 400;
   letter-spacing: 0;
   padding: 0rem;
-  font-display: swap;
+  /* font-display: swap; */
   /*changed this*/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
-@media (max-width:500px){
-.hidden_in_mobile{display: none;}
+
+@media (max-width:500px) {
+  .hidden_in_mobile {
+    display: none;
+  }
 }
+
 .background {
   background-size: cover;
   background-repeat: no-repeat;
@@ -210,8 +213,8 @@ section:nth-of-type(8) {
 }
 
 header {
-  font-family: "Open Sans Condensed";
-  font-display: swap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  /* font-display: swap; */
   position: fixed;
   display: block;
   width: 100vw;
@@ -383,7 +386,7 @@ div.tab::after {
 
 .title {
   font-family: "Open Sans Condensed";
-  font-display: swap;
+  /* font-display: swap; */
   font-size: 2em;
   text-transform: uppercase;
 }
@@ -722,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
   color: rgba(254, 82, 76, 1);
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-display: swap;
+  /* font-display: swap; */
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -817,10 +820,6 @@ video {
   margin-top: 50px;
 }
 
-.initiative-wrapper {
-  /* margin-bottom: 20em; */
-}
-
 @media (max-width: 400px) {
   .initiative-wrapper {
     margin-bottom: 0px;
@@ -862,13 +861,17 @@ video {
   max-width: 200px;
   max-height: 200px;
 }
+
 @media (max-width:811px)and (min-width:600px) {
   .initiative-block .img {
-  max-width: 180px;
-  max-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
   }
-  #contact .content-wrapper{height: 95vh;}
+  #contact .content-wrapper {
+    height: 95vh;
+  }
 }
+
 .initiative-block .img {
   -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
@@ -966,27 +969,28 @@ video {
 }
 
 .btn {
-	position: relative;
-	font-size: 20px;
-	display: block;
-	margin: 30px auto;
-	padding: 10px;
-	overflow: hidden;
-	border-width: 0;
-	outline: none;
-	border-radius: 2px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-	background-color: #2ecc71;
-	
-	transition: background-color .3s;
-  }
-  .btn:hover, .btn:focus {
+  position: relative;
+  font-size: 20px;
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #2ecc71;
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
   background-color: #27ae60;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
 }
-  /* .btn span {
+
+/* .btn span {
 	display: block;
 	padding: 12px 24px;
 	color: #ffffff;

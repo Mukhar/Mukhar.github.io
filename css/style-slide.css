@@ -32,7 +32,7 @@ body {
 
 .panel .content {
   position: absolute;
-  width: 100vw;
+  width: 100vw; 
   min-height: var(--ht);
   color: #FFF;
 }
@@ -44,7 +44,7 @@ body {
   transform: translateY(-50%);
   text-align: justify;
   font-family: Roboto;
-  font-display: swap;
+  /* font-display: swap; */
   font-size: 1rem;
   line-height: 16px;
 }

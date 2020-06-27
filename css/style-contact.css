@@ -695,7 +695,7 @@ img {
   padding: 3.5% 0 2.5% 0;
   color: white;
   font-family: "Roboto Condensed", sans-serif;
-  font-display: swap;
+  /* font-display: swap; */
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
