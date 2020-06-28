@@ -874,6 +874,12 @@ video {
   }
 }
 
+@media(max-width:600px) {
+  #contact .content-wrapper {
+    height: 95vh;
+  }
+}
+
 .initiative-block .img {
   -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
