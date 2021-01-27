@@ -8,7 +8,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <title>Team</title>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="theme.css">
@@ -169,43 +169,16 @@
     </section>
 
 
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js "></script>
-    <script>
-        $(function() {
-            $('#container').on('click', '.material-card > .mc-btn-action', function() {
-                var card = $(this).parent('.material-card');
-                var icon = $(this).children('i');
-                icon.addClass('fa-spin-fast');
-
-                if (card.hasClass('mc-active')) {
-                    card.removeClass('mc-active');
-
-                    window.setTimeout(function() {
-                        icon
-                            .removeClass('fa-arrow-left')
-                            .removeClass('fa-spin-fast')
-                            .addClass('fa-bars');
-
-                    }, 500);
-
-                } else {
-                    card.addClass('mc-active');
-
-                    window.setTimeout(function() {
-                        icon
-                            .removeClass('fa-bars')
-                            .removeClass('fa-spin-fast')
-                            .addClass('fa-arrow-left');
-
-                    }, 500);
-                }
-            });
-        });
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js "></script>
+    <script type="javascript">
+        $(function() { $('#container').on('click', '.material-card > .mc-btn-action', function() { var card = $(this).parent('.material-card'); var icon = $(this).children('i'); icon.addClass('fa-spin-fast'); if (card.hasClass('mc-active')) { card.removeClass('mc-active');
+        window.setTimeout(function() { icon .removeClass('fa-arrow-left') .removeClass('fa-spin-fast') .addClass('fa-bars'); }, 500); } else { card.addClass('mc-active'); window.setTimeout(function() { icon .removeClass('fa-bars') .removeClass('fa-spin-fast')
+        .addClass('fa-arrow-left'); }, 500); } }); });
     </script>
 
 
     <!--PARTIAL-->
-    <script type="text/javascript ">
+    <!-- <script type="text/javascript ">
         const url = "https://iic.devclub.in/api/team ";
         fetch(url)
             .then(resp => resp.json())
@@ -274,7 +247,7 @@
 
                   
                   */
-    </script>
+    </script> -->
     <script src="./script.js "></script>
 
 
