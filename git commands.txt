@@ -1,0 +1,2 @@
+$ git reset --soft HEAD~15 && git commit
+$ git push -f
