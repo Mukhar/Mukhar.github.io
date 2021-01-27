@@ -736,43 +736,43 @@
 }
 
 .material-card.Light-Blue h2 {
-    background-color: #03a9f4;
+    background-color: #2c3133;
 }
 
 .material-card.Light-Blue h2:after {
-    border-top-color: #03a9f4;
-    border-right-color: #03a9f4;
+    border-top-color: #2c3133;
+    border-right-color: #2c3133;
     border-bottom-color: transparent;
     border-left-color: transparent;
 }
 
 .material-card.Light-Blue h2:before {
     border-top-color: transparent;
-    border-right-color: #01579b;
-    border-bottom-color: #01579b;
+    border-right-color: #2c3133;
+    border-bottom-color: #2c3133;
     border-left-color: transparent;
 }
 
 .material-card.Light-Blue.mc-active h2:before {
     border-top-color: transparent;
-    border-right-color: #03a9f4;
-    border-bottom-color: #03a9f4;
+    border-right-color: #2c3133;
+    border-bottom-color: #2c3133;
     border-left-color: transparent;
 }
 
 .material-card.Light-Blue.mc-active h2:after {
-    border-top-color: #01579b;
-    border-right-color: #01579b;
+    border-top-color: #2c3133;
+    border-right-color: #2c3133;
     border-bottom-color: transparent;
     border-left-color: transparent;
 }
 
 .material-card.Light-Blue .mc-btn-action {
-    background-color: #03a9f4;
+    background-color: #F44336;
 }
 
 .material-card.Light-Blue .mc-btn-action:hover {
-    background-color: #01579b;
+    background-color: #2c3133;
 }
 
 .material-card.Light-Blue .mc-footer h4 {
@@ -1516,5 +1516,5 @@
 }
 
 .active {
-    color: tomato;
+    color: tomato !important;
 }
