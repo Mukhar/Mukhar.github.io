@@ -1,10 +1,11 @@
 /* Mukhar Jain — portfolio
- * Small, dependency-free interactions:
- *   1. Year stamp in footer
- *   2. Sticky header shadow on scroll
- *   3. Mobile nav toggle
- *   4. Scroll-spy: highlight current section in nav
- *   5. Close mobile nav on link click
+ * Vanilla JS, no deps.
+ *  1. Footer year
+ *  2. Sticky-header shadow on scroll
+ *  3. Mobile nav toggle + auto-close
+ *  4. Scroll-spy nav highlight
+ *  5. Scroll-reveal animations
+ *  6. Animated stat counters
  */
 
 (() => {
@@ -14,7 +15,7 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // 2. Sticky header shadow on scroll
+  // 2. Sticky header shadow
   const header = document.getElementById("siteHeader");
   if (header) {
     const onScroll = () => {
@@ -24,7 +25,7 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  // 3 + 5. Mobile nav toggle
+  // 3. Mobile nav toggle
   const navToggle = document.getElementById("navToggle");
   const nav = document.querySelector(".primary-nav");
   if (navToggle && nav) {
@@ -40,7 +41,7 @@
     );
   }
 
-  // 4. Scroll-spy with IntersectionObserver
+  // 4. Scroll-spy
   if (nav && "IntersectionObserver" in window) {
     const links = Array.from(nav.querySelectorAll("a[href^='#']"));
     const sections = links
@@ -64,12 +65,85 @@
             }
           });
         },
-        {
-          rootMargin: "-45% 0px -50% 0px",
-          threshold: 0,
-        }
+        { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
       );
       sections.forEach((s) => observer.observe(s.el));
     }
+  }
+
+  // 5. Scroll-reveal — fade + slide in
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reveals = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)) {
+    reveals.forEach((el) => el.classList.add("is-visible"));
+  } else {
+    // Add stagger delays to siblings inside common parents
+    const stagger = (parent, selector) => {
+      const items = parent.querySelectorAll(selector);
+      items.forEach((el, i) => {
+        if (!el.hasAttribute("data-delay")) {
+          el.setAttribute("data-delay", String(i % 4));
+        }
+      });
+    };
+    document.querySelectorAll(".now-grid").forEach((p) => stagger(p, ".now-card"));
+    document.querySelectorAll(".timeline").forEach((p) => stagger(p, ".timeline-item"));
+    document.querySelectorAll(".projects-grid").forEach((p) => stagger(p, ".project-card"));
+    document.querySelectorAll(".skills-grid").forEach((p) => stagger(p, ".skill-group"));
+    document.querySelectorAll(".awards-list").forEach((p) => stagger(p, "li.reveal"));
+    document.querySelectorAll(".stats-grid").forEach((p) => stagger(p, ".stat"));
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    reveals.forEach((el) => revealObserver.observe(el));
+  }
+
+  // 6. Animated stat counters
+  const counters = document.querySelectorAll("[data-counter]");
+  if (counters.length && "IntersectionObserver" in window && !reduce) {
+    const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+    const animate = (el) => {
+      const target = parseFloat(el.dataset.counter);
+      const suffix = el.dataset.suffix || "";
+      const prefix = el.dataset.prefix || "";
+      const duration = 1400;
+      const start = performance.now();
+      const tick = (now) => {
+        const t = Math.min(1, (now - start) / duration);
+        const value = target * easeOut(t);
+        const display =
+          target >= 10 ? Math.round(value) : value.toFixed(value < 10 && target % 1 !== 0 ? 1 : 0);
+        el.textContent = `${prefix}${display}${suffix}`;
+        if (t < 1) requestAnimationFrame(tick);
+        else el.textContent = `${prefix}${target}${suffix}`;
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    counters.forEach((el) => counterObserver.observe(el));
+  } else if (reduce) {
+    counters.forEach((el) => {
+      el.textContent = `${el.dataset.prefix || ""}${el.dataset.counter}${el.dataset.suffix || ""}`;
+    });
   }
 })();
