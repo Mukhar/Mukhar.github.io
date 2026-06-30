@@ -8,14 +8,14 @@
     <title>Mukhar Jain · Senior Software Engineer · Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Mukhar Jain — SDE 3 at Walmart Labs, IIT Delhi '21. Five years building distributed systems, data platforms, and GenAI tools at retail and banking scale."
+      content="Portfolio of Mukhar Jain — SDE 3 at Walmart Labs, IIT Delhi '21. Building distributed systems, data platforms, and GenAI tools at retail and banking scale."
     />
     <meta name="author" content="Mukhar Jain" />
 
     <meta property="og:title" content="Mukhar Jain · Senior Software Engineer" />
     <meta
       property="og:description"
-      content="SDE 3 at Walmart Labs. IIT Delhi. Building distributed systems, data platforms, and GenAI tools."
+      content="SDE 3 at Walmart Labs. IIT Delhi. Distributed systems, data platforms, GenAI tooling."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mukhar.github.io/" />
@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
       rel="stylesheet"
     />
 
@@ -47,16 +47,14 @@
 
         <nav class="primary-nav" aria-label="Primary">
           <a href="#about">About</a>
+          <a href="#work">Work</a>
           <a href="#experience">Experience</a>
-          <a href="#projects">Work</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <a href="Mukhar_Jain.pdf" class="btn btn-primary nav-cta" download>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Resume
+          CV
         </a>
 
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -68,7 +66,6 @@
     <main id="top">
       <!-- ───────────── Hero ───────────── -->
       <section class="hero">
-        <!-- Animated background -->
         <div class="hero-bg" aria-hidden="true">
           <div class="blob blob-1"></div>
           <div class="blob blob-2"></div>
@@ -84,19 +81,19 @@
             </p>
 
             <h1>
-              Hi, I'm <span class="name-accent">Mukhar</span> —
-              I build <span class="accent">distributed systems</span>
-              that quietly do the heavy lifting.
+              I build <span class="accent">software</span> that <br/>
+              <span class="name-accent">quietly</span> does the heavy lifting.
             </h1>
 
             <p class="lede">
-              SDE 3 at <strong>Walmart Labs</strong>. IIT Delhi&nbsp;’21.
-              Five years shipping production systems across retail, banking,
-              and a sprinkle of GenAI.
+              Hi, I'm Mukhar. I'm a senior engineer at
+              <strong>Walmart Labs</strong>, designing data platforms and
+              GenAI tooling. Before that I shaped digital banking at
+              Standard Chartered. IIT Delhi&nbsp;’21.
             </p>
 
             <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary">
+              <a href="#work" class="btn btn-primary">
                 See my work
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
@@ -105,17 +102,8 @@
                 Let's chat
               </a>
             </div>
-
-            <div class="hero-stack">
-              <span class="hero-stack-label">My daily toolbox</span>
-              <ul class="hero-stack-list">
-                <li>Java</li><li>Go</li><li>Spring Boot</li>
-                <li>React</li><li>Kubernetes</li><li>GCP</li><li>BigQuery</li>
-              </ul>
-            </div>
           </div>
 
-          <!-- Right side: orbit + code card -->
           <aside class="hero-visual" aria-label="At a glance">
             <span class="float-badge fb-1" style="--d:0s">☕ Java</span>
             <span class="float-badge fb-2" style="--d:.6s">Go</span>
@@ -133,15 +121,14 @@
               </div>
               <pre class="card-body"><code><span class="tk-c">// Senior Software Engineer</span>
 <span class="tk-k">const</span> <span class="tk-v">mukhar</span> = {
-  <span class="tk-p">role</span>:      <span class="tk-s">"SDE 3 @ Walmart Labs"</span>,
+  <span class="tk-p">role</span>:      <span class="tk-s">"SDE 3 @ Walmart"</span>,
   <span class="tk-p">based</span>:     <span class="tk-s">"Bangalore, India"</span>,
-  <span class="tk-p">education</span>: <span class="tk-s">"B.Tech, IIT Delhi"</span>,
   <span class="tk-p">focus</span>: [
     <span class="tk-s">"Distributed systems"</span>,
     <span class="tk-s">"Data platforms"</span>,
     <span class="tk-s">"GenAI tooling"</span>,
   ],
-  <span class="tk-p">currently</span>: <span class="tk-s">"shipping NL→SQL"</span>,
+  <span class="tk-p">building</span>: <span class="tk-s">"NL → SQL"</span>,
 };</code></pre>
             </div>
           </aside>
@@ -156,7 +143,7 @@
         </a>
       </section>
 
-      <!-- ───────────── Stats band (dark) ───────────── -->
+      <!-- ───────────── Stats band ───────────── -->
       <section id="stats" class="stats-band">
         <div class="container stats-grid">
           <article class="stat reveal">
@@ -193,507 +180,279 @@
         </div>
       </section>
 
-      <!-- ───────────── About ───────────── -->
+      <!-- ───────────── About — short ───────────── -->
       <section id="about" class="section">
-        <div class="container two-col">
+        <div class="container about-wrap">
           <div class="section-head reveal">
             <p class="section-eyebrow">// About</p>
             <h2>Engineer first, problem-solver always.</h2>
-            <p class="section-kicker">
-              I like the hard, unglamorous middle of the stack — the
-              services that don't ship with a UI but make everything else
-              possible.
-            </p>
           </div>
 
-          <div class="section-body">
-            <p class="reveal">
-              I graduated from <strong>IIT Delhi</strong> in 2021 and have
-              spent the last five years building systems that quietly carry
-              a lot of weight — onboarding platforms used by thousands,
-              secrets managers that touch every microservice, and data
-              pipelines that feed the dashboards leadership reads every
-              morning.
-            </p>
-            <p class="reveal">
-              At <strong>Walmart Labs</strong> I work full-stack — Java and
-              Spring Boot for the heavy lifting, Go for systems work, React
-              for the UI, Kubernetes and GCP underneath. Lately I've been
-              focused on bringing <strong>GenAI into developer
-              workflows</strong>, where the gains compound.
-            </p>
-            <p class="reveal">
-              Before Walmart I spent three years at
-              <strong>Standard Chartered</strong> leading a Java 8 → 17
-              modernization, rebuilding the bank's digital onboarding, and
-              saving $1M/year by redesigning a single PDF utility.
-            </p>
+          <p class="about-lede reveal">
+            I like the unglamorous middle of the stack — services that
+            don't ship with a UI but make everything else possible. Lately
+            I'm spending most of my time on
+            <strong>GenAI in developer workflows</strong>, where the
+            gains compound. Before that, three years at Standard Chartered
+            taught me what banking-scale reliability actually demands.
+          </p>
 
-            <div class="now-grid">
-              <article class="now-card reveal">
-                <div class="now-icon now-icon-blue" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-                </div>
-                <h4>Currently building</h4>
-                <p>GenAI-powered NL→SQL tooling that compresses data exploration time at Walmart scale.</p>
-              </article>
+          <div class="now-grid">
+            <article class="now-card reveal">
+              <div class="now-icon now-icon-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h4>Currently building</h4>
+              <p>An LLM-backed natural-language → SQL layer that lets PMs compose dashboards in plain English.</p>
+            </article>
 
-              <article class="now-card reveal">
-                <div class="now-icon now-icon-amber" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                </div>
-                <h4>Currently learning</h4>
-                <p>LLM orchestration patterns, vector retrieval internals, and Go performance tuning.</p>
-              </article>
+            <article class="now-card reveal">
+              <div class="now-icon now-icon-amber" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <h4>Currently learning</h4>
+              <p>LLM orchestration patterns, vector retrieval internals, and Go performance tuning.</p>
+            </article>
 
-              <article class="now-card reveal">
-                <div class="now-icon now-icon-green" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><line x1="4" y1="22" x2="20" y2="22"/><line x1="10" y1="14.66" x2="10" y2="22"/><line x1="14" y1="14.66" x2="14" y2="22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
-                </div>
-                <h4>Beyond work</h4>
-                <p>DevOps India Summit '22 speaker. Top 1% AWS DeepRacer Global. Quantum Computing cert, IISc.</p>
-              </article>
-            </div>
+            <article class="now-card reveal">
+              <div class="now-icon now-icon-green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h4>Off-screen</h4>
+              <p>Running, reading, and the occasional weekend side project. Always up for a chai conversation.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ───────────── Experience timeline ───────────── -->
-      <section id="experience" class="section section-alt">
-        <div class="container">
-          <div class="section-head section-head-center reveal">
-            <p class="section-eyebrow">// Experience</p>
-            <h2>Five years, three teams, one through-line:<br/>ship things that matter.</h2>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item reveal">
-              <div class="company-tile tile-walmart" aria-hidden="true">
-                <span>W</span>
-              </div>
-              <article class="timeline-card">
-                <header>
-                  <div class="role-line">
-                    <h3>Software Development Engineer III</h3>
-                    <span class="period">Jul 2024 — Present</span>
-                  </div>
-                  <p class="company">
-                    <span class="company-name">Walmart Labs</span>
-                    <span class="dot-sep">·</span>
-                    <span class="location">Bangalore, India</span>
-                  </p>
-                  <ul class="chip-row stack-chips">
-                    <li>Java</li><li>Spring Boot</li><li>Go</li>
-                    <li>React</li><li>Kubernetes</li><li>GCP</li><li>BigQuery</li>
-                  </ul>
-                </header>
-                <ul class="bullets">
-                  <li>
-                    Designed and shipped a data pipeline service that moves
-                    data from <strong>AzureSQL → BigQuery</strong> on a
-                    schedule — <strong>30% faster query execution</strong>
-                    for downstream analytics teams.
-                  </li>
-                  <li>
-                    Built <strong>GenAI-powered query generation</strong>
-                    for self-serve data exploration —
-                    <strong>40% reduction</strong> in dashboard creation
-                    time.
-                  </li>
-                  <li>
-                    Developed a <strong>Secrets Manager in Go</strong> that
-                    encrypts and auto-rotates DB credentials across
-                    <strong>50+ process IDs</strong>, cutting manual ops
-                    by 60%.
-                  </li>
-                  <li>
-                    Provisioned Redis and authored a reusable Java
-                    connectivity library now powering services with
-                    <strong>100K+ unique users</strong>.
-                  </li>
-                </ul>
-              </article>
-            </li>
-
-            <li class="timeline-item reveal">
-              <div class="company-tile tile-scb" aria-hidden="true">
-                <span>S</span>
-              </div>
-              <article class="timeline-card">
-                <header>
-                  <div class="role-line">
-                    <h3>Software Development Engineer II — Full Stack</h3>
-                    <span class="period">Jul 2021 — Jul 2024</span>
-                  </div>
-                  <p class="company">
-                    <span class="company-name">Standard Chartered GBS</span>
-                    <span class="dot-sep">·</span>
-                    <span class="location">Bangalore, India</span>
-                  </p>
-                  <ul class="chip-row stack-chips">
-                    <li>Java</li><li>Python</li><li>React</li>
-                    <li>Spring Boot</li><li>Azure</li><li>Jenkins</li>
-                  </ul>
-                </header>
-                <ul class="bullets">
-                  <li>
-                    Led the modernization from <strong>Java 8 → Java
-                    17</strong> and <strong>Spring Boot 3</strong> —
-                    <strong>30% better runtime performance</strong>.
-                  </li>
-                  <li>
-                    Built CI/CD pipelines on Jenkins, Kubernetes and
-                    Docker — <strong>80% fewer deployment errors</strong>
-                    and a measurable lift in delivery quality.
-                  </li>
-                  <li>
-                    Shipped a <strong>multi-lingual digital onboarding
-                    platform</strong> used by 5,000+ global users; new
-                    features lifted retention by 30%.
-                  </li>
-                  <li>
-                    Redesigned the PDF generation utility —
-                    <strong>$1M/year savings</strong> and 50% turnaround
-                    cut.
-                  </li>
-                </ul>
-              </article>
-            </li>
-
-            <li class="timeline-item reveal">
-              <div class="company-tile tile-pb" aria-hidden="true">
-                <span>P</span>
-              </div>
-              <article class="timeline-card">
-                <header>
-                  <div class="role-line">
-                    <h3>Machine Learning Intern</h3>
-                    <span class="period">Jun 2020 — Aug 2020</span>
-                  </div>
-                  <p class="company">
-                    <span class="company-name">PolicyBazaar · PB Fintech</span>
-                    <span class="dot-sep">·</span>
-                    <span class="location">Gurugram, India</span>
-                  </p>
-                  <ul class="chip-row stack-chips">
-                    <li>Python</li><li>NLP</li><li>scikit-learn</li>
-                  </ul>
-                </header>
-                <ul class="bullets">
-                  <li>
-                    Trained sentiment-analysis and named-entity-recognition
-                    models over customer chats to surface high-intent leads.
-                  </li>
-                  <li>
-                    Productionized the model into the outreach workflow —
-                    <strong>70% lift</strong> in targeting efficiency for
-                    high-propensity segments.
-                  </li>
-                </ul>
-              </article>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- ───────────── Featured + Selected work ───────────── -->
-      <section id="projects" class="section">
+      <!-- ───────────── Work — alternating showcases ───────────── -->
+      <section id="work" class="section section-alt">
         <div class="container">
           <div class="section-head section-head-center reveal">
             <p class="section-eyebrow">// Selected work</p>
-            <h2>A few systems I'm proud of.</h2>
+            <h2>Four systems I'm proud of.</h2>
             <p class="section-kicker">
-              Each one started as a vague problem statement and ended as a
+              Each started as a vague problem statement and ended as a
               service teams quietly depend on.
             </p>
           </div>
 
-          <!-- Featured -->
-          <article class="featured-card reveal">
-            <div class="featured-art" aria-hidden="true">
-              <svg viewBox="0 0 200 200" fill="none">
-                <defs>
-                  <linearGradient id="fa1" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#1e40af"/>
-                    <stop offset="1" stop-color="#3b82f6"/>
-                  </linearGradient>
-                  <linearGradient id="fa2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#8b5cf6"/>
-                    <stop offset="1" stop-color="#3b82f6"/>
-                  </linearGradient>
-                </defs>
-                <circle cx="40" cy="50" r="22" fill="url(#fa1)" opacity=".9"/>
-                <circle cx="160" cy="55" r="28" fill="url(#fa2)" opacity=".85"/>
-                <rect x="60" y="100" width="80" height="60" rx="10" fill="url(#fa1)" opacity=".9"/>
-                <path d="M 62 50 Q 100 80 158 55" stroke="#fff" stroke-width="2" stroke-dasharray="4 4" opacity=".5"/>
-                <path d="M 40 72 Q 70 100 70 100" stroke="#fff" stroke-width="2" stroke-dasharray="4 4" opacity=".5"/>
-                <path d="M 160 83 Q 130 100 130 100" stroke="#fff" stroke-width="2" stroke-dasharray="4 4" opacity=".5"/>
-              </svg>
-            </div>
-            <div class="featured-body">
-              <span class="project-tag tag-featured">★ Flagship · Walmart</span>
-              <h3>AzureSQL → BigQuery pipeline + GenAI query layer</h3>
-              <p>
-                Built the schedule-driven service that streams transactional
-                data into BigQuery so analyst teams run heavy queries off
-                the OLTP path — then layered an LLM-powered NL→SQL surface
-                on top so PMs can compose dashboards by asking questions in
-                plain English.
-              </p>
-              <div class="metrics-row">
-                <div class="metric"><strong>30%</strong><span>faster queries</span></div>
-                <div class="metric"><strong>40%</strong><span>faster dashboards</span></div>
-                <div class="metric"><strong>100K+</strong><span>downstream users</span></div>
+          <div class="work-list">
+            <!-- Work 1: NL→SQL GenAI -->
+            <article class="work-item reveal">
+              <div class="work-visual visual-1" aria-hidden="true">
+                <svg viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="20" y="20" width="280" height="60" rx="12" fill="#ffffff" opacity=".95"/>
+                  <circle cx="44" cy="50" r="11" fill="#6366f1"/>
+                  <text x="44" y="55" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">PM</text>
+                  <rect x="64" y="38" width="200" height="6" rx="3" fill="#0f172a" opacity=".75"/>
+                  <rect x="64" y="52" width="150" height="6" rx="3" fill="#0f172a" opacity=".35"/>
+
+                  <path d="M160 88 L160 108" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M152 100 L160 110 L168 100" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+                  <rect x="20" y="118" width="280" height="82" rx="12" fill="#0b1220"/>
+                  <text x="36" y="142" font-family="JetBrains Mono,monospace" font-size="11" fill="#c084fc">SELECT</text>
+                  <text x="84" y="142" font-family="JetBrains Mono,monospace" font-size="11" fill="#93c5fd">region,</text>
+                  <text x="140" y="142" font-family="JetBrains Mono,monospace" font-size="11" fill="#c084fc">SUM</text>
+                  <text x="170" y="142" font-family="JetBrains Mono,monospace" font-size="11" fill="#86efac">(revenue)</text>
+                  <text x="36" y="162" font-family="JetBrains Mono,monospace" font-size="11" fill="#c084fc">FROM</text>
+                  <text x="74" y="162" font-family="JetBrains Mono,monospace" font-size="11" fill="#fbbf24">sales_fact</text>
+                  <text x="36" y="182" font-family="JetBrains Mono,monospace" font-size="11" fill="#c084fc">GROUP BY</text>
+                  <text x="106" y="182" font-family="JetBrains Mono,monospace" font-size="11" fill="#93c5fd">region;</text>
+                </svg>
               </div>
-              <ul class="chip-row">
-                <li>Java</li><li>Spring Boot</li><li>BigQuery</li><li>LLM</li><li>Kubernetes</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Grid -->
-          <div class="projects-grid">
-            <article class="project-card reveal">
-              <div class="project-art art-1" aria-hidden="true"></div>
-              <div class="project-tag">Platform · Walmart</div>
-              <h3>Go-based Secrets Manager</h3>
-              <p>
-                Central service that encrypts, rotates, and distributes DB
-                credentials for 50+ process IDs. Replaced a brittle
-                manual-rotation process and cut human ops by 60%.
-              </p>
-              <ul class="chip-row">
-                <li>Go</li><li>Encryption</li><li>Kubernetes</li>
-              </ul>
+              <div class="work-content">
+                <p class="work-meta">★ Flagship · Walmart · 2025</p>
+                <h3>Natural-language → SQL for data exploration</h3>
+                <p>
+                  An LLM-powered layer on top of BigQuery that lets PMs
+                  and analysts compose dashboards by asking questions in
+                  plain English — built on a data pipeline I designed to
+                  move transactional data off the OLTP path.
+                </p>
+                <div class="work-metrics">
+                  <div class="metric"><strong>40%</strong><span>faster dashboard creation</span></div>
+                  <div class="metric"><strong>30%</strong><span>faster downstream queries</span></div>
+                </div>
+                <ul class="work-stack">
+                  <li>Java</li><li>Spring Boot</li><li>BigQuery</li><li>LLM</li><li>Kubernetes</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-art art-2" aria-hidden="true"></div>
-              <div class="project-tag">Infra · Walmart</div>
-              <h3>Redis connectivity library</h3>
-              <p>
-                Reusable Java library standardizing cache integration
-                across services. Powers products serving 100K+ unique
-                users with consistent, low-latency access.
-              </p>
-              <ul class="chip-row">
-                <li>Java</li><li>Redis</li><li>Spring Boot</li>
-              </ul>
+            <!-- Work 2: Go Secrets Manager -->
+            <article class="work-item reveal">
+              <div class="work-visual visual-2" aria-hidden="true">
+                <svg viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="160" cy="110" r="72" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3 6" opacity=".4"/>
+                  <circle cx="160" cy="110" r="50" fill="rgba(255,255,255,.08)"/>
+
+                  <rect x="142" y="105" width="36" height="32" rx="5" fill="#fff"/>
+                  <path d="M150 105 V97 a10 10 0 0 1 20 0 V105" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <circle cx="160" cy="120" r="3" fill="#0f172a"/>
+                  <rect x="158" y="121" width="4" height="9" fill="#0f172a"/>
+
+                  <g fill="#fbbf24">
+                    <circle cx="78" cy="50"  r="6"/>
+                    <circle cx="242" cy="50" r="6"/>
+                    <circle cx="60" cy="120" r="6"/>
+                    <circle cx="260" cy="120" r="6"/>
+                    <circle cx="92" cy="180" r="6"/>
+                    <circle cx="228" cy="180" r="6"/>
+                  </g>
+
+                  <text x="160" y="208" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#ffffff" opacity=".7">50+ services · auto-rotate</text>
+                </svg>
+              </div>
+              <div class="work-content">
+                <p class="work-meta">Platform · Walmart · 2024</p>
+                <h3>Go-based Secrets Manager</h3>
+                <p>
+                  A central service that encrypts, rotates, and distributes
+                  database credentials across the organization — replacing
+                  a brittle manual-rotation process that engineering teams
+                  had been quietly suffering through for years.
+                </p>
+                <div class="work-metrics">
+                  <div class="metric"><strong>50+</strong><span>process IDs auto-rotated</span></div>
+                  <div class="metric"><strong>60%</strong><span>less manual ops</span></div>
+                </div>
+                <ul class="work-stack">
+                  <li>Go</li><li>Encryption</li><li>Kubernetes</li><li>Vault patterns</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-art art-3" aria-hidden="true"></div>
-              <div class="project-tag">Modernization · Standard Chartered</div>
-              <h3>Java 8 → 17 + Spring Boot 3</h3>
-              <p>
-                Led the upgrade of a long-lived banking codebase across
-                multiple services — modules, records, the new HTTP client,
-                and the Spring Boot 3 jump. Net result: ~30% runtime
-                improvement.
-              </p>
-              <ul class="chip-row">
-                <li>Java 17</li><li>Spring Boot 3</li><li>Jenkins</li>
-              </ul>
+            <!-- Work 3: Multi-lingual onboarding -->
+            <article class="work-item reveal">
+              <div class="work-visual visual-3" aria-hidden="true">
+                <svg viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="115" y="18" width="90" height="184" rx="14" fill="#ffffff"/>
+                  <rect x="115" y="18" width="90" height="184" rx="14" stroke="#0f172a" stroke-width="2" fill="none"/>
+                  <rect x="150" y="22" width="20" height="3" rx="1.5" fill="#0f172a" opacity=".5"/>
+                  <rect x="120" y="40" width="80" height="22" fill="#1e40af"/>
+                  <text x="160" y="55" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#fff">Sign up</text>
+
+                  <rect x="124" y="74" width="60" height="20" rx="10" fill="#e0e7ff"/>
+                  <text x="154" y="88" text-anchor="middle" font-family="serif" font-size="11" fill="#1e3a8a">नमस्ते</text>
+
+                  <rect x="140" y="102" width="60" height="20" rx="10" fill="#1e40af"/>
+                  <text x="170" y="116" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#fff">Welcome</text>
+
+                  <rect x="124" y="130" width="56" height="20" rx="10" fill="#e0e7ff"/>
+                  <text x="152" y="144" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1e3a8a">欢迎</text>
+
+                  <rect x="138" y="158" width="62" height="20" rx="10" fill="#1e40af"/>
+                  <text x="169" y="172" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#fff">Bienvenue</text>
+
+                  <rect x="135" y="186" width="50" height="8" rx="4" fill="#0f172a" opacity=".15"/>
+                </svg>
+              </div>
+              <div class="work-content">
+                <p class="work-meta">Product · Standard Chartered · 2023</p>
+                <h3>Multi-lingual digital onboarding</h3>
+                <p>
+                  Designed and launched the bank's digital onboarding flow
+                  used by global customers across multiple languages and
+                  scripts. Progressive disclosure turned a dropoff-prone
+                  form into a journey people actually finished.
+                </p>
+                <div class="work-metrics">
+                  <div class="metric"><strong>5,000+</strong><span>users onboarded</span></div>
+                  <div class="metric"><strong>+30%</strong><span>retention lift</span></div>
+                </div>
+                <ul class="work-stack">
+                  <li>React</li><li>Spring Boot</li><li>i18n</li><li>Azure</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-art art-4" aria-hidden="true"></div>
-              <div class="project-tag">Product · Standard Chartered</div>
-              <h3>Multi-lingual digital onboarding</h3>
-              <p>
-                Designed and launched the bank's digital onboarding flow
-                used by 5,000+ global users across multiple languages.
-                Progressive-disclosure features lifted retention by 30%.
-              </p>
-              <ul class="chip-row">
-                <li>React</li><li>Spring Boot</li><li>i18n</li><li>Azure</li>
-              </ul>
-            </article>
+            <!-- Work 4: PDF rewrite -->
+            <article class="work-item reveal">
+              <div class="work-visual visual-4" aria-hidden="true">
+                <svg viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="rotate(-5 130 110)">
+                    <rect x="80" y="44" width="100" height="132" rx="6" fill="#ffffff" opacity=".7"/>
+                  </g>
+                  <rect x="100" y="38" width="100" height="132" rx="6" fill="#ffffff"/>
+                  <rect x="112" y="56" width="50" height="5" rx="2.5" fill="#0f172a" opacity=".8"/>
+                  <rect x="112" y="72" width="76" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="82" width="76" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="92" width="54" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="108" width="76" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="118" width="64" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="128" width="70" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="146" width="40" height="3" rx="1.5" fill="#64748b"/>
+                  <rect x="112" y="156" width="50" height="3" rx="1.5" fill="#64748b"/>
 
-            <article class="project-card reveal">
-              <div class="project-art art-5" aria-hidden="true"></div>
-              <div class="project-tag">Cost optimization · Standard Chartered</div>
-              <h3>PDF rewrite — $1M/yr saved</h3>
-              <p>
-                Replaced a vendor-heavy PDF pipeline with an in-house
-                renderer tuned for the bank's template set. Cut turnaround
-                in half and avoided $1M of annual licensing.
-              </p>
-              <ul class="chip-row">
-                <li>Java</li><li>PDF</li><li>Performance</li>
-              </ul>
-            </article>
+                  <circle cx="248" cy="82" r="40" fill="#fbbf24"/>
+                  <text x="248" y="80" text-anchor="middle" font-family="Fraunces,serif" font-size="22" font-weight="700" fill="#78350f">$1M</text>
+                  <text x="248" y="98" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#78350f">SAVED / YR</text>
 
-            <article class="project-card reveal">
-              <div class="project-art art-6" aria-hidden="true"></div>
-              <div class="project-tag">ML · PolicyBazaar</div>
-              <h3>Lead-intent NLP model</h3>
-              <p>
-                Trained sentiment + NER models over customer chats; pushed
-                them into the outreach pipeline for a 70% lift in
-                targeting efficiency.
-              </p>
-              <ul class="chip-row">
-                <li>Python</li><li>NLP</li><li>scikit-learn</li>
-              </ul>
+                  <path d="M212 95 Q228 100 232 92" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="work-content">
+                <p class="work-meta">Cost optimization · Standard Chartered · 2022</p>
+                <h3>PDF generation rewrite</h3>
+                <p>
+                  Replaced a vendor-heavy PDF pipeline with an in-house
+                  renderer tuned for the bank's template set. Most
+                  satisfying delete-key moment of my career so far.
+                </p>
+                <div class="work-metrics">
+                  <div class="metric"><strong>$1M</strong><span>annual licensing saved</span></div>
+                  <div class="metric"><strong>50%</strong><span>turnaround time cut</span></div>
+                </div>
+                <ul class="work-stack">
+                  <li>Java</li><li>PDF</li><li>Performance</li>
+                </ul>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- ───────────── Skills ───────────── -->
-      <section id="skills" class="section section-alt">
+      <!-- ───────────── Experience — compact strip ───────────── -->
+      <section id="experience" class="section">
         <div class="container">
           <div class="section-head section-head-center reveal">
-            <p class="section-eyebrow">// Skills</p>
-            <h2>Tools I reach for.</h2>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill-group reveal">
-              <div class="skill-icon icon-violet" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <h3>Languages</h3>
-              <ul class="chip-row">
-                <li>Java</li><li>Go</li><li>Python</li><li>C++</li>
-                <li>TypeScript</li><li>JavaScript</li>
-              </ul>
-            </div>
-
-            <div class="skill-group reveal">
-              <div class="skill-icon icon-blue" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-              </div>
-              <h3>Frameworks</h3>
-              <ul class="chip-row">
-                <li>Spring Boot</li><li>Spring Data JPA</li><li>React</li>
-                <li>Next.js</li><li>JUnit</li>
-              </ul>
-            </div>
-
-            <div class="skill-group reveal">
-              <div class="skill-icon icon-teal" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><line x1="6.5" y1="6.5" x2="10" y2="10"/><line x1="17.5" y1="6.5" x2="14" y2="10"/><line x1="6.5" y1="17.5" x2="10" y2="14"/><line x1="17.5" y1="17.5" x2="14" y2="14"/></svg>
-              </div>
-              <h3>Architecture</h3>
-              <ul class="chip-row">
-                <li>Microservices</li><li>Distributed Systems</li>
-                <li>API Design</li><li>System Design</li>
-                <li>High Availability</li><li>Design Patterns</li>
-              </ul>
-            </div>
-
-            <div class="skill-group reveal">
-              <div class="skill-icon icon-sky" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-              </div>
-              <h3>Cloud &amp; DevOps</h3>
-              <ul class="chip-row">
-                <li>Google Cloud</li><li>AWS</li><li>Azure</li>
-                <li>Kubernetes</li><li>Docker</li><li>Jenkins</li>
-                <li>Helm</li><li>OpenShift</li>
-              </ul>
-            </div>
-
-            <div class="skill-group reveal">
-              <div class="skill-icon icon-amber" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              </div>
-              <h3>Data &amp; Storage</h3>
-              <ul class="chip-row">
-                <li>BigQuery</li><li>PostgreSQL</li><li>Azure SQL</li>
-                <li>OracleDB</li><li>MySQL</li><li>MongoDB</li>
-                <li>Cassandra</li><li>Redis</li><li>Kafka</li>
-                <li>Elastic</li>
-              </ul>
-            </div>
-
-            <div class="skill-group reveal">
-              <div class="skill-icon icon-rose" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-              </div>
-              <h3>Certifications</h3>
-              <ul class="chip-row">
-                <li>AWS Developer Associate</li>
-                <li>AWS Cloud Practitioner</li>
-                <li>Quantum Computing — IISc</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ───────────── Education + Awards ───────────── -->
-      <section id="education" class="section">
-        <div class="container two-col">
-          <div class="section-head reveal">
-            <p class="section-eyebrow">// Education &amp; recognition</p>
-            <h2>Foundations and a few highlights.</h2>
+            <p class="section-eyebrow">// Experience</p>
+            <h2>Where I've worked.</h2>
             <p class="section-kicker">
-              The IIT years taught me how to learn fast. The awards taught
-              me that quietly-useful work eventually gets noticed.
+              The full bullet list lives in my
+              <a class="inline-link" href="Mukhar_Jain.pdf" download>CV</a>
+              — these are the chapters.
             </p>
           </div>
 
-          <div class="section-body">
-            <article class="edu-card reveal">
-              <div class="edu-left">
-                <div class="edu-logo" aria-hidden="true">IITD</div>
+          <ul class="exp-strip">
+            <li class="exp-tile reveal">
+              <div class="exp-logo tile-walmart" aria-hidden="true">W</div>
+              <div class="exp-body">
+                <p class="exp-role">Software Development Engineer III</p>
+                <p class="exp-company">Walmart Labs</p>
+                <p class="exp-period">2024 — Present · Bangalore</p>
               </div>
-              <div class="edu-right">
-                <h3>Indian Institute of Technology, Delhi</h3>
-                <p class="edu-degree">Bachelor of Technology (B.Tech)</p>
-                <p class="edu-period">July 2017 — May 2021 · New Delhi, India</p>
+            </li>
+            <li class="exp-tile reveal">
+              <div class="exp-logo tile-scb" aria-hidden="true">S</div>
+              <div class="exp-body">
+                <p class="exp-role">SDE II · Full Stack</p>
+                <p class="exp-company">Standard Chartered GBS</p>
+                <p class="exp-period">2021 — 2024 · Bangalore</p>
               </div>
-            </article>
-
-            <h3 class="awards-head reveal">// Awards &amp; recognition</h3>
-            <ul class="awards-list">
-              <li class="reveal">
-                <span class="award-medal" aria-hidden="true">🏅</span>
-                <span class="award-year">2025</span>
-                <span class="award-text">
-                  <strong>Walmart Bravo Award (₹10,000)</strong> for impactful
-                  delivery of the AzureSQL → BigQuery data-transfer service.
-                </span>
-              </li>
-              <li class="reveal">
-                <span class="award-medal" aria-hidden="true">🏆</span>
-                <span class="award-year">2023</span>
-                <span class="award-text">
-                  <strong>Best Performing Newbie</strong> at Standard
-                  Chartered &amp; <strong>Building Future-Ready Workforce</strong>
-                  award (₹15,000).
-                </span>
-              </li>
-              <li class="reveal">
-                <span class="award-medal" aria-hidden="true">🎙</span>
-                <span class="award-year">2022</span>
-                <span class="award-text">
-                  <strong>Finalist speaker</strong> on microservices and
-                  micro-frontends at the DevOps India Summit 2022.
-                </span>
-              </li>
-              <li class="reveal">
-                <span class="award-medal" aria-hidden="true">🏎</span>
-                <span class="award-year">2021</span>
-                <span class="award-text">
-                  Finished in the <strong>top 1%</strong> of the AWS
-                  DeepRacer Reinforcement-Learning Global Championship.
-                </span>
-              </li>
-              <li class="reveal">
-                <span class="award-medal" aria-hidden="true">🧬</span>
-                <span class="award-year">2019</span>
-                <span class="award-text">
-                  $3,000 research grant from
-                  <strong>SciLifeLab, Sweden</strong> to build software for
-                  DNA sequencing.
-                </span>
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="exp-tile reveal">
+              <div class="exp-logo tile-pb" aria-hidden="true">P</div>
+              <div class="exp-body">
+                <p class="exp-role">Machine Learning Intern</p>
+                <p class="exp-company">PolicyBazaar · PB Fintech</p>
+                <p class="exp-period">2020 · Gurugram</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -713,9 +472,9 @@
             Let's build something <span class="accent-light">worth building</span>.
           </h2>
           <p class="contact-lede">
-            Happy to talk distributed systems, data platforms, GenAI
-            engineering, or interesting senior-IC and tech-lead
-            opportunities. I read every email.
+            Happy to talk distributed systems, data platforms, GenAI, or
+            interesting senior-IC and tech-lead opportunities. I read
+            every email.
           </p>
 
           <div class="contact-actions">
@@ -731,19 +490,19 @@
 
           <ul class="socials">
             <li>
-              <a href="https://www.linkedin.com/in/mukhar-jain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/mukhar-jain/" target="_blank" rel="noopener noreferrer">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
                 <span>LinkedIn</span>
               </a>
             </li>
             <li>
-              <a href="mailto:mukhar.jain2009@gmail.com" aria-label="Email">
+              <a href="mailto:mukhar.jain2009@gmail.com">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 <span>Email</span>
               </a>
             </li>
             <li>
-              <a href="tel:+917217852165" aria-label="Phone">
+              <a href="tel:+917217852165">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <span>+91 72178-52165</span>
               </a>
@@ -753,12 +512,11 @@
       </section>
     </main>
 
-    <!-- ───────────── Footer ───────────── -->
     <footer class="site-footer">
       <div class="container footer-row">
         <p>
           © <span id="year"></span> Mukhar Jain ·
-          <span class="footer-muted">Designed &amp; built with plain HTML &amp; CSS.</span>
+          <span class="footer-muted">Built with plain HTML &amp; CSS.</span>
         </p>
         <a href="#top" class="back-top">
           Back to top

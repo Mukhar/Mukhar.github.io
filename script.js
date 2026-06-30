@@ -87,11 +87,8 @@
       });
     };
     document.querySelectorAll(".now-grid").forEach((p) => stagger(p, ".now-card"));
-    document.querySelectorAll(".timeline").forEach((p) => stagger(p, ".timeline-item"));
-    document.querySelectorAll(".projects-grid").forEach((p) => stagger(p, ".project-card"));
-    document.querySelectorAll(".skills-grid").forEach((p) => stagger(p, ".skill-group"));
-    document.querySelectorAll(".awards-list").forEach((p) => stagger(p, "li.reveal"));
     document.querySelectorAll(".stats-grid").forEach((p) => stagger(p, ".stat"));
+    document.querySelectorAll(".exp-strip").forEach((p) => stagger(p, ".exp-tile"));
 
     const revealObserver = new IntersectionObserver(
       (entries) => {
